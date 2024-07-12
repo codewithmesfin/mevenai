@@ -10,36 +10,47 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <section style={{ backgroundRepeat: "round" }}
-        className="md:bg-[url('/bg.png')] -mt-2 w-full bg-cover">
+      <section 
+        className="-mt-2 w-full">
         <div className="w-[95%] mx-auto py-40 pb-32">
-          <div className="md:flex justify-between md:space-x-5">
-            <div className="w-full md:w-1/2 h-full">
-              <h1
+          <div className="w-full md:max-w-6xl mx-auto">
+          <h1
                 style={{ lineHeight: 1.2 }}
-                className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text"
+                className="text-center text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 text-transparent bg-clip-text"
               >
-                Let us transform your dream into
-                <span className="text-blue-600 border-b px-4">
-                  reality</span>
+                We make<span className="text-blue-600"> technology</span>
+                <span> a seamless part of your</span>
+                <span className="text-blue-600"> success story</span>
               </h1>
-              <h2 className="py-6 text-gray-600 text-lg md:text-xl">
-                Mevinai helps you connect to opportunity and positively impact business.
-              </h2>
+          </div>
+          <div className="md:pt-16 md:flex md:items-center  md:justify-evenly md:space-x-5">
+            <div className="w-full md:w-2/5 h-full">
+             
+
+              <div className="my-4 mt-6">
+                <h2 className="text-[#333333] text-lg md:text-2xl">
+                  <span className="bg-gradient-to-r from-blue-600 to-green-600 inline-block text-transparent bg-clip-text">
+                    Mevinai
+                  </span>
+                  <span> can help you connect to opportunities and positively impact your business.</span>
+                </h2>
+              </div>
 
 
-              <div className="text-2xl md:text-3xl bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text">
+              <div className="my-6">
+              <div className="text-3xl md:text-4xl bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text">
                 <div className="flex space-x-2">
                   <span>Now a day every</span>
                   <div className="text-purple-600">
                     <TypewriterEffect items={[
                       'pharmacy', 'school',
-                      'manufacturing','retail',
+                      'manufacturing', 'retail',
                       'healthcare'
 
-                    ]} /></div> 
-                  </div>
+                    ]} /></div>
+                </div>
                 <span>requires tech solutions</span>
+              </div>
               </div>
 
 
@@ -57,13 +68,13 @@ export default function Home() {
                   className="mt-10 md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-green-600 bg-green-600 hover:bg-green-800 text-white px-6 py-3"
                 >
                   <FolderOpenIcon path="right" className="h-5 w-5" strokeWidth={2} />
-                  <span>Learn more</span>
+                  <span>Meet the team</span>
                   <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
                 </Link>
 
               </div>
             </div>
-            <div className="w-full md:w-1/2  py-10 md:py-1 mb-10">
+            <div className="w-full md:w-2/5  py-10 md:py-1 mb-10">
               <img
                 src="/images/img1.png"
                 alt=""
@@ -78,7 +89,7 @@ export default function Home() {
 
 
       <section>
-        <div className="w-[90%] md:w-[80%] mx-auto py-32">
+        <div className="w-[90%] md:w-[80%] mx-auto py-8">
           <h1 className="text-4xl text-center">Contents ....</h1>
         </div>
       </section>

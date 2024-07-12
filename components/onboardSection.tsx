@@ -23,8 +23,8 @@ export default function OnboardingSection() {
             Don’t be late
           </h1>
           <p className="py-4 text-center text-gray-500 text-sm md:text-md">
-            Ready to meet with Meninai team? Click the button below to access
-            {"Meninai's"} Calendly and choose a time that works best for you. Once
+            Ready to meet with Mevinai team? Click the button below to access
+            {" Mevinai's"} Calendly and choose a time that works best for you. Once
             {"you've"} selected a date and time, {"you'll"} be all set for your meeting.
           </p>
           <div className="md:flex md:justify-center">
