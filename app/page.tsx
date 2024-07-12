@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import OnboardingSection from "@/components/onboardSection";
-import TypewriterEffect from "@/components/typeWriterEffect";
-import { ArrowUpRightIcon, ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon, StarIcon } from "@heroicons/react/24/outline";
-import Head from "next/head";
+import {ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 
@@ -11,15 +9,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Mevinai</title>
-        <meta
-          name="description"
-          content="Mevinai is a small team of Experienced Software Engineers."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <section style={{ backgroundRepeat: "round" }}
         className="md:bg-[url('/bg.png')] -mt-2 w-full bg-cover">
         <div className="w-[95%] mx-auto py-40">

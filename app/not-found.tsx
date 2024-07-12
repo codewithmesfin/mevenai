@@ -1,20 +1,12 @@
 
 /* eslint-disable @next/next/no-img-element */
-import Head from "next/head";
+
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-    <Head>
-        <title>Mevinai</title>
-        <meta
-          name="description"
-          content="Mevinai is a small team of Experienced Software Engineers."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+   
       <section
         className="bg-green-100 h-screen flex items-center">
         <div className="w-[90%] mx-auto pt-32">
