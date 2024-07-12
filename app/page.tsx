@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 import OnboardingSection from "@/components/onboardSection";
-import {ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon } from "@heroicons/react/24/outline";
+import TypewriterEffect from "@/components/typeWriterEffect";
+import { ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 
@@ -11,20 +12,35 @@ export default function Home() {
     <div>
       <section style={{ backgroundRepeat: "round" }}
         className="md:bg-[url('/bg.png')] -mt-2 w-full bg-cover">
-        <div className="w-[95%] mx-auto py-40">
+        <div className="w-[95%] mx-auto py-40 pb-32">
           <div className="md:flex justify-between md:space-x-5">
             <div className="w-full md:w-1/2 h-full">
               <h1
                 style={{ lineHeight: 1.2 }}
-                className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text"
+                className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text"
               >
                 Let us transform your dream into
                 <span className="text-blue-600 border-b px-4">
-                  realities</span>
+                  reality</span>
               </h1>
-              <h2 className="py-6 text-[#333333] text-lg md:text-3xl">
-                Mevinai helps the world connect to opportunity and positively impact business.
+              <h2 className="py-6 text-gray-600 text-lg md:text-xl">
+                Mevinai helps you connect to opportunity and positively impact business.
               </h2>
+
+
+              <div className="text-2xl md:text-3xl bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text">
+                <div className="flex space-x-2">
+                  <span>Now a day every</span>
+                  <div className="text-purple-600">
+                    <TypewriterEffect items={[
+                      'pharmacy', 'school',
+                      'manufacturing','retail',
+                      'healthcare'
+
+                    ]} /></div> 
+                  </div>
+                <span>requires tech solutions</span>
+              </div>
 
 
               <div className="py-8 md:flex md:items-center md:space-x-5 md:space-x-10">
@@ -32,11 +48,11 @@ export default function Home() {
                   href="/register"
                   className=" flex justify-evenly items-center space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-blue-800 text-white px-6 py-3"
                 >
-                   <Cog8ToothIcon path="right" className="h-5 w-5" strokeWidth={2} />
+                  <Cog8ToothIcon path="right" className="h-5 w-5" strokeWidth={2} />
                   <span>Signup for free</span>
                   <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
                 </Link>
-              <Link
+                <Link
                   href="/about"
                   className="mt-10 md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-green-600 bg-green-600 hover:bg-green-800 text-white px-6 py-3"
                 >
