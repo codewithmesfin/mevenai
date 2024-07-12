@@ -7,7 +7,7 @@ import GotopButton from '@/components/gotoTop';
 
 
 export const metadata: Metadata = {
-  title: 'Meniani',
+  title: 'Mevinai',
   description: 'Mevinai is a small team of Experienced Software Engineers.',
 };
 
