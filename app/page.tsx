@@ -10,26 +10,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <section 
+      <section
         className="-mt-2 w-full">
         <div className="w-[95%] mx-auto py-40 pb-32">
           <div className="w-full md:max-w-6xl mx-auto">
-          <h1
-                style={{ lineHeight: 1.2 }}
-                className="text-center text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 text-transparent bg-clip-text"
-              >
-                We make<span className="text-blue-600"> technology</span>
-                <span> a seamless part of your</span>
-                <span className="text-blue-600"> success story</span>
-              </h1>
+            <h1
+              style={{ lineHeight: 1.2 }}
+              className="text-center text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-gray-900 to-green-600 text-transparent bg-clip-text"
+            >
+              We make<span className="text-blue-600"> technology</span>
+              <span> a seamless part of your</span>
+              <span className="text-blue-600"> success story</span>
+            </h1>
           </div>
           <div className="md:pt-16 md:flex md:items-center  md:justify-evenly md:space-x-5">
             <div className="w-full md:w-2/5 h-full">
-             
+
 
               <div className="my-4 mt-6">
                 <h2 className="text-[#333333] text-lg md:text-2xl">
-                  <span className="bg-gradient-to-r from-blue-600 to-green-600 inline-block text-transparent bg-clip-text">
+                  <span className="bg-gradient-to-r from-[#8261e9] to-green-600 inline-block text-transparent bg-clip-text">
                     Mevinai
                   </span>
                   <span> can help you connect to opportunities and positively impact your business.</span>
@@ -38,19 +38,19 @@ export default function Home() {
 
 
               <div className="my-6">
-              <div className="text-3xl md:text-4xl bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text">
-                <div className="flex space-x-2">
-                  <span>Now a day every</span>
-                  <div className="text-purple-600">
-                    <TypewriterEffect items={[
-                      'pharmacy', 'school',
-                      'manufacturing', 'retail',
-                      'healthcare'
+                <div className="text-3xl md:text-4xl bg-gradient-to-r from-gray-900 to-green-600 inline-block text-transparent bg-clip-text">
+                  <div className="flex space-x-2">
+                    <span>Now a day every</span>
+                    <div className="text-purple-600">
+                      <TypewriterEffect items={[
+                        'pharmacy', 'school',
+                        'manufacturing', 'retail',
+                        'healthcare'
 
-                    ]} /></div>
+                      ]} /></div>
+                  </div>
+                  <span>requires tech solutions</span>
                 </div>
-                <span>requires tech solutions</span>
-              </div>
               </div>
 
 

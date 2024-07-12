@@ -39,12 +39,12 @@ export default function PublicNavbar() {
             <div className="w-[250px]">
               <Link href={"/"} className='text-3xl md:text-4xl flex items-center space-x-2 text-white font-bold'>
                 <Image
-                  className="h-10 w-10 w-auto rounded-full"
+                  className="h-12 w-12 w-auto rounded-full"
                   src="/logo.png"
                   alt=""
                   height={50} width={50}
                 />
-                <span className="bg-gradient-to-r from-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold">
+                <span className="bg-gradient-to-r from-[#8261e9] to-green-600 inline-block text-transparent bg-clip-text font-extrabold">
                   Mevinai</span
                 >
               </Link>
@@ -85,12 +85,12 @@ export default function PublicNavbar() {
             <div className="flex items-center justify-between">
               <Link href={"/"} className='text-3xl md:text-4xl flex items-center space-x-2 text-white font-bold'>
                 <Image
-                  className="h-10 w-10 w-auto"
+                  className="h-12 w-12 w-auto"
                   src="/logo.png"
                   alt=""
                   height={50} width={50}
                 />
-                <span className="bg-gradient-to-r from-green-600 to-[#6F4E37] inline-block text-transparent bg-clip-text font-extrabold">
+                <span className="bg-gradient-to-r from-[#8261e9] to-green-600 inline-block text-transparent bg-clip-text font-extrabold">
                   Mevinai</span
                 >
               </Link>
