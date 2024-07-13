@@ -44,7 +44,7 @@ export default function PublicNavbar() {
                   alt=""
                   height={50} width={50}
                 />
-                <span className="bg-gradient-to-r from-[#8261e9] to-green-600 inline-block text-transparent bg-clip-text font-extrabold">
+                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled?'to-green-600':'to-green-100'}  inline-block text-transparent bg-clip-text font-extrabold`}>
                   Mevinai</span
                 >
               </Link>
@@ -55,7 +55,7 @@ export default function PublicNavbar() {
               <Link key={item.name} href={item.href}
                 className="leading-6  px-3 py-3 rounded-lg">
 
-                <span className={`${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}  hover:text-blue-500`}>{item.name}</span>
+                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-gray-600' :'text-gray-100'}  hover:text-blue-500`}>{item.name}</span>
               </Link>
             ))}
           </div>

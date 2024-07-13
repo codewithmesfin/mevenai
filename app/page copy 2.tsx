@@ -11,16 +11,14 @@ export default function Home() {
   return (
     <div>
       <section
-        className="bg-green-600">
-        <div className="w-[95%] md:w-[95%] mx-auto pt-32 md:pt-16 pb-16 md:pb-8">
+        className="-mt-2 w-full">
+        <div className="w-[98%] md:w-[95%] mx-auto py-32 pb-32 ">
 
-          <div className="md:p-10 rounded-xl">
+          <div className="bg-green-600 p-10 rounded-xl">
             <div className="md:pt-10 md:flex md:items-center md:justify-between md:space-x-10">
               <div className="w-full md:w-3/5">
                 <div>
-                  <h1 style={{
-                    lineHeight: 1.2
-                  }} className="font-extrabold text-4xl md:text-7xl text-white">
+                  <h1 className="font-extrabold text-4xl md:text-7xl text-white">
                     Find friendly tech mentors for you</h1>
                 </div>
 
@@ -87,16 +85,8 @@ export default function Home() {
 
 
       <section>
-        <div className="w-[90%] md:w-[80%] mx-auto py-16">
-          <h1 style={{
-            lineHeight: 1.3
-          }} className="text-4xl md:text-7xl font-bold text-center">
-            Helping businesses and individuals to
-            find the best fitting software.
-          </h1>
-          <div className="py-10">
-            {/* asdfgh */}
-          </div>
+        <div className="w-[90%] md:w-[80%] mx-auto py-8">
+          <h1 className="text-4xl text-center">Contents ....</h1>
         </div>
       </section>
 
