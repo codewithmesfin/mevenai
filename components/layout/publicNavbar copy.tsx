@@ -33,49 +33,38 @@ export default function PublicNavbar() {
 
   return (
     <div>
-      <header className={`fixed inset-x-0 top-0 z-50  ${isScrolled ? 'bg-white border-b border-gray-200' : 'bg-white'}`}>
-        <nav className='w-[95%] mx-auto px-2 py-3 flex flex justify-between items-center'>
-          <div className="flex items-center justify-start space-x-5">
+      <header className={`fixed inset-x-0 top-0 z-50  ${isScrolled ? 'bg-white border-b border-gray-200' : ''}`}>
+        <nav className='w-[95%] mx-auto px-2 py-4 flex flex justify-between items-center'>
+          <div className="flex items-center justify-between space-x-5">
             <div className="w-[250px]">
-              <Link href={"/"} className='text-xl md:text-2xl flex items-center space-x-2 text-white font-bold'>
+              <Link href={"/"} className='text-3xl md:text-4xl flex items-center space-x-2 text-white font-bold'>
                 <Image
-                  className="h-10 w-10 w-auto rounded-full"
+                  className="h-12 w-12 w-auto rounded-full"
                   src="/logo.png"
                   alt=""
                   height={50} width={50}
                 />
-                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled?'to-green-600':'to-green-500'}  inline-block text-transparent bg-clip-text font-extrabold`}>
+                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled?'to-green-600':'to-green-100'}  inline-block text-transparent bg-clip-text font-extrabold`}>
                   Mevinai</span
                 >
               </Link>
             </div>
-            <div className="hidden md:block ">
+          </div>
+          <div className="hidden md:block ">
             {navigation.map((item: any) => (
               <Link key={item.name} href={item.href}
-                className="px-3 py-3 rounded-lg">
+                className="leading-6  px-3 py-3 rounded-lg">
 
-                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-gray-500' :'text-gray-500'}  hover:text-blue-500`}>{item.name}</span>
+                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-gray-600' :'text-gray-100'}  hover:text-blue-500`}>{item.name}</span>
               </Link>
             ))}
           </div>
-          </div>
-          
 
           <div className="flex items-center space-x-5 md:space-x-1">
-            <div className='hidden md:flex items-center space-x-5'>
+            <div className='hidden md:block'>
               <Link
                 href="/register"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-6 text-gray-500 py-2 rounded-lg"
-              ><span>Contact experts</span>
-              </Link>
-              <Link
-                href="/register"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-7 text-gray-500 py-2 rounded-lg"
-              ><span>Sign in</span>
-              </Link>
-              <Link
-                href="/register"
-                className="border border-blue-600 flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-900 px-6 text-white py-2 rounded-lg"
+                className="flex items-center justify-center space-x-3 bg-blue-600 px-6 text-white py-3  rounded-lg shadow"
               ><span>Signup for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>

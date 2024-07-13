@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <section
-        className="bg-[#EEE3FF]">
+        className="bg-green-600">
         <div className="w-[95%] md:w-[95%] mx-auto pt-32 md:pt-24 pb-6">
 
           <div className="md:px-10 rounded-xl">
@@ -21,13 +21,13 @@ export default function Home() {
                 <div>
                   <h1 style={{
                     lineHeight: 1.2
-                  }} className="font-extrabold text-4xl md:text-7xl text-gray-900">
+                  }} className="font-extrabold text-4xl md:text-7xl text-white">
                     Find friendly tech mentors for you</h1>
                 </div>
 
                 <div className="my-4 mt-6 md:max-w-[600px]">
-                  <h2 className="text-gray-700 text-lg md:text-2xl">
-                    <span className="bg-gradient-to-r from-[#f9904b] to-green-600 inline-block text-transparent bg-clip-text">
+                  <h2 className="text-gray-100 text-lg md:text-2xl">
+                    <span className="bg-gradient-to-r from-[#f9904b] to-gray-100 inline-block text-transparent bg-clip-text">
                       Mevinai
                     </span>
                     <span> can help you connect to opportunities and positively impact your business.</span>
@@ -36,10 +36,10 @@ export default function Home() {
 
 
                 <div className="my-6">
-                  <div className="text-xl md:text-4xl text-gray-900">
+                  <div className="text-xl md:text-4xl text-gray-200">
                     <div className="flex space-x-2">
                       <span>Now a day every</span>
-                      <div className="text-orange-600">
+                      <div className="text-gray-800">
                         <TypewriterEffect items={[
                           'pharmacy', 'school',
                           'manufacturing', 'retail',
