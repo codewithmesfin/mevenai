@@ -12,9 +12,9 @@ export default function Home() {
     <div>
       <section
         className="bg-green-600">
-        <div className="w-[95%] md:w-[95%] mx-auto pt-32 md:pt-16 pb-16 md:pb-8">
+        <div className="w-[95%] md:w-[95%] mx-auto pt-32 md:pt-24 pb-6">
 
-          <div className="md:p-10 rounded-xl">
+          <div className="md:px-10 rounded-xl">
             <div className="md:pt-10 md:flex md:items-center md:justify-between md:space-x-10">
               <div className="w-full md:w-3/5">
                 <div>
