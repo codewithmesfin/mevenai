@@ -4,6 +4,7 @@ import OnboardingSection from "@/components/onboardSection";
 import TypewriterEffect from "@/components/typeWriterEffect";
 import { cards, services } from "@/data/services";
 import { ArrowTopRightOnSquareIcon, ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -56,7 +57,7 @@ export default function Home() {
                 <div className="py-8 flex justify-between md:justify-start items-center  space-x-5 md:space-x-10">
                   <Link
                     href="/register"
-                    className=" flex justify-evenly items-center space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-blue-800 text-white px-3 md:px-6 py-3"
+                    className=" flex justify-evenly items-center space-x-3 border border-[#0070f3] rounded-xl bg-[#0070f3] hover:bg-blue-500 hover:border-blue-500 text-white px-3 md:px-6 py-3"
                   >
                     <Cog8ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Signup for free</span>
@@ -74,9 +75,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full md:w-2/5 py-10 md:py-1 mb-10">
-                <img
+                <Image
                   src="/images/img1.png"
                   alt=""
+                  height={400} width={400}
                   className="w-full h-full rounded-xl" />
               </div>
               <div>

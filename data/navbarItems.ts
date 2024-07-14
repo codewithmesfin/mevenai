@@ -4,7 +4,7 @@ const navbarItems: any = [
     { name: "Services", href: "/services", current: false },
     { name: "Process", href: "/process", current: false },
     { name: "Articles", href: "/article", current: false },
-    { name: "Stores ↗", href: "/article", current: false },
+    { name: "Stores ↗", href: "/stores", current: false },
   ];
   export default navbarItems;
   

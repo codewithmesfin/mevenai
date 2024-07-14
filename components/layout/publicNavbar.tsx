@@ -52,7 +52,7 @@ export default function PublicNavbar() {
             <div className="hidden md:block md:pl-5">
               {navigation.map((item: any) => (
                 <Link key={item.name} href={item.href}
-                  className="px-3 py-3 rounded-lg">
+                  className={`px-3 py-3 rounded-lg`}>
 
                   <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled ? 'text-[#5f6368]' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
                 </Link>
@@ -75,7 +75,7 @@ export default function PublicNavbar() {
               </Link>
               <Link
                 href="/register"
-                className="border border-blue-600 flex items-center justify-center space-x-3 bg-blue-600 hover:bg-blue-900 px-6 text-white py-2 rounded-lg"
+                className="border border-[#0070f3] flex items-center justify-center space-x-3 bg-[#0070f3] hover:bg-blue-500 hover:border-blue-500 px-6 text-white py-2 rounded-lg"
               ><span>Signup for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
