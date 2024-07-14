@@ -36,7 +36,7 @@ export default function PublicNavbar() {
       <header className={`fixed inset-x-0 top-0 z-50  ${isScrolled ? 'bg-white border-b border-gray-200' : 'bg-white'}`}>
         <nav className='w-[95%] mx-auto px-2 py-3 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
-            <div className="w-[250px]">
+            <div>
               <Link href={"/"} className='text-xl md:text-2xl flex items-center space-x-2 text-white font-bold'>
                 <Image
                   className="h-10 w-10 w-auto rounded-full"
@@ -44,22 +44,22 @@ export default function PublicNavbar() {
                   alt=""
                   height={50} width={50}
                 />
-                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled?'to-green-600':'to-green-500'}  inline-block text-transparent bg-clip-text font-extrabold`}>
+                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled ? 'to-green-600' : 'to-green-500'}  inline-block text-transparent bg-clip-text font-extrabold`}>
                   Mevinai</span
                 >
               </Link>
             </div>
-            <div className="hidden md:block ">
-            {navigation.map((item: any) => (
-              <Link key={item.name} href={item.href}
-                className="px-3 py-3 rounded-lg">
+            <div className="hidden md:block md:pl-5">
+              {navigation.map((item: any) => (
+                <Link key={item.name} href={item.href}
+                  className="px-3 py-3 rounded-lg">
 
-                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-[#5f6368]' :'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
-              </Link>
-            ))}
+                  <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled ? 'text-[#5f6368]' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
+                </Link>
+              ))}
+            </div>
           </div>
-          </div>
-          
+
 
           <div className="flex items-center space-x-5 md:space-x-1">
             <div className='hidden md:flex items-center space-x-5'>
