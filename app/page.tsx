@@ -56,19 +56,19 @@ export default function Home() {
                 <div className="py-8 flex justify-between md:justify-start items-center  space-x-5 md:space-x-10">
                   <Link
                     href="/register"
-                    className=" flex justify-evenly items-center space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-blue-800 text-white px-6 py-3"
+                    className=" flex justify-evenly items-center space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-blue-800 text-white px-3 md:px-6 py-3"
                   >
                     <Cog8ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Signup for free</span>
-                    <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+                    <ChevronRightIcon path="right" className="h-4 w-4 hidden md:flex" strokeWidth={2} />
                   </Link>
                   <Link
                     href="/about"
-                    className=" md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-gray-600 bg-gray-600 hover:bg-gray-800 text-white px-6 py-3"
+                    className=" md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-gray-600 bg-gray-600 hover:bg-gray-800 text-white px-3 md:px-6 py-3"
                   >
                     <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Meet the team</span>
-                    <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+                    <ChevronRightIcon path="right" className="h-4 w-4 hidden md:flex" strokeWidth={2} />
                   </Link>
 
                 </div>
