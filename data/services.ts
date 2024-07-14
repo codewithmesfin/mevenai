@@ -16,19 +16,25 @@
         title:"Odoo",
         subtitle:"",
         availability:"Free"
-    }
+    },
+    {
+      img:"Web3",
+      title:"Odoo",
+      subtitle:"",
+      availability:"Free"
+  }
  ]
 
  const cards = [
     {
       title: "Identify the right Solution",
       subtitle:
-        "We have several years of expereince on the tech industry. If you are worring on choosing which Software or technology works best for you, feel free to reach us.",
+        "For several years, we have been providing expertise in the technology industry. If you are facing difficulty in choosing the most suitable software or technology for your needs.",
       href:"/contact"
       },
     {
-      title: "Setup a perfect team",
-      subtitle:"Whether you are running a remote or on-site tech team and you dought in productivity, just meet our team. We can help you ending up with the right team.",
+      title: "Understand how it works",
+      subtitle:"Prior to undertaking a full-scale implementation of a technological solution, it is prudent to conduct a pilot test. This pilot should evaluate the solution's efficacy, consistency, and dependability.",
       href:"/learn"
     },
   ];

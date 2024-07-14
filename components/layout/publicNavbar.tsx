@@ -54,7 +54,7 @@ export default function PublicNavbar() {
               <Link key={item.name} href={item.href}
                 className="px-3 py-3 rounded-lg">
 
-                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-gray-500' :'text-gray-500'}  hover:text-blue-500`}>{item.name}</span>
+                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled?'text-[#5f6368]' :'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
               </Link>
             ))}
           </div>
@@ -65,12 +65,12 @@ export default function PublicNavbar() {
             <div className='hidden md:flex items-center space-x-5'>
               <Link
                 href="/register"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-6 text-gray-500 py-2 rounded-lg"
+                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-6 text-[#5f6368] py-2 rounded-lg"
               ><span>Contact experts</span>
               </Link>
               <Link
                 href="/register"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-7 text-gray-500 py-2 rounded-lg"
+                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-7 text-[#5f6368] py-2 rounded-lg"
               ><span>Sign in</span>
               </Link>
               <Link
@@ -121,10 +121,10 @@ export default function PublicNavbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-200 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span className={`${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}  hover:text-blue-500`}>{item.name}</span>
+                      <span className={`${pathname == item.href ? 'text-blue-600' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
                     </Link>
                   ))}
                 </div>

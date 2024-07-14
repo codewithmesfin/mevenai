@@ -19,6 +19,7 @@ export default function Home() {
             <div className="md:pt-10 md:flex md:items-center md:justify-between md:space-x-10">
               <div className="w-full md:w-3/5">
                 <div>
+                  
                   <h1 style={{
                     lineHeight: 1.2
                   }} className="font-extrabold text-4xl md:text-7xl text-gray-900">
@@ -38,34 +39,34 @@ export default function Home() {
                 <div className="my-6">
                   <div className="text-xl md:text-4xl text-gray-900">
                     <div className="flex space-x-2">
-                      <span>Now a day every</span>
+                      <span>In this era, every</span>
                       <div className="text-orange-600">
                         <TypewriterEffect items={[
                           'pharmacy', 'school',
-                          'manufacturing', 'retail',
+                          'manufacturing', 'retailer',
                           'healthcare'
 
                         ]} /></div>
                     </div>
-                    <span>requires tech solutions</span>
+                    <span>requires a tech solution.</span>
                   </div>
                 </div>
 
 
-                <div className="py-8 md:flex md:items-center md:space-x-5 md:space-x-10">
+                <div className="py-8 flex justify-between md:justify-start items-center  space-x-5 md:space-x-10">
                   <Link
                     href="/register"
                     className=" flex justify-evenly items-center space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-blue-800 text-white px-6 py-3"
                   >
-                    <Cog8ToothIcon path="right" className="h-5 w-5" strokeWidth={2} />
+                    <Cog8ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Signup for free</span>
                     <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
                   </Link>
                   <Link
                     href="/about"
-                    className="mt-10 md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-gray-600 bg-gray-600 hover:bg-gray-800 text-white px-6 py-3"
+                    className=" md:mt-0 flex justify-evenly items-center space-x-3 rounded-xl border border-gray-600 bg-gray-600 hover:bg-gray-800 text-white px-6 py-3"
                   >
-                    <FolderOpenIcon path="right" className="h-5 w-5" strokeWidth={2} />
+                    <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Meet the team</span>
                     <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
                   </Link>
@@ -145,7 +146,7 @@ export default function Home() {
                 business a
                 <span
                   className="border-b-4 text-[#007aff] border-gray-200 pb-2 font-extrabold"
-                  >different!</span
+                  > different!</span
                 >
               </h1>
           <div className="py-10">
@@ -153,7 +154,7 @@ export default function Home() {
               {
                 services.map((item: any, i: number) => <div key={item.title}>
                   <div className="border border-gray-100 p-5">
-                    sadfg
+                   Service {i+1}
                   </div>
                 </div>)
               }
