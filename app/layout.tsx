@@ -26,7 +26,7 @@ export default function RootLayout({
         <Footer />
         <GotopButton />
       </body>
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID} />
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
     </html>
   );
 }
