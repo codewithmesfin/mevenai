@@ -64,12 +64,12 @@ export default function PublicNavbar() {
           <div className="flex items-center space-x-5 md:space-x-1">
             <div className='hidden md:flex items-center space-x-5'>
               <Link
-                href="/register"
+                href="/contents"
                 className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-6 text-[#5f6368] py-2 rounded-lg"
               ><span>Contact experts</span>
               </Link>
               <Link
-                href="/register"
+                href="/login"
                 className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-7 text-[#5f6368] py-2 rounded-lg"
               ><span>Sign in</span>
               </Link>
