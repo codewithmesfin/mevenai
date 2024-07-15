@@ -15,6 +15,7 @@
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^2.1.4",
     "@hookform/resolvers": "^3.3.4",
+    "@next/third-parties": "^14.2.5",
     "@supabase/ssr": "^0.0.10",
     "@supabase/supabase-js": "^2.43.5",
     "next": "14.1.0",
