@@ -7,7 +7,7 @@
     },
     {
         img:"https://img.freepik.com/free-photo/illustrated-rendering-twin-avatar_23-2151061349.jpg?t=st=1721037723~exp=1721041323~hmac=361e6e53031793824483edb1bea3f3670bc994e1d010f350f2a7f63d5eae08c2&w=1800",
-        title:"Generative AI",
+        title:"Artificial Intelligence",
         subtitle:"",
         availability:"Free"
     },
