@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { services } from '@/data/services'
 import { AdjustmentsHorizontalIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
