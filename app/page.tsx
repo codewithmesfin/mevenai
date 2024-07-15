@@ -61,7 +61,7 @@ export default function Home() {
                   >
                     <Cog8ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Signup for free</span>
-                    <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+                    <ChevronRightIcon path="right" className="h-4 w-4 hidden sm:flex" strokeWidth={2} />
                   </Link>
                   <Link
                     href="/about"
@@ -69,7 +69,7 @@ export default function Home() {
                   >
                     <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
                     <span>Meet the team</span>
-                    <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+                    <ChevronRightIcon path="right" className="h-4 w-4 hidden sm:flex" strokeWidth={2} />
                   </Link>
 
                 </div>
