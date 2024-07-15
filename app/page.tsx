@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
 
-      <section>
+      <section className="bg-gray-50">
         <div className="w-[90%] mx-auto py-16">
           <div className="md:flex items-center md:space-x-10">
             <div className="w-full md:w-2/5 pb-10 md:pb-1">
@@ -116,7 +116,7 @@ export default function Home() {
               {cards.map((item: any) => (
                 <Link key={item.title} href={"item.href"}>
                   <div
-                    className="rounded-[20px] p-5 border hover:border-4 hover:border-green-50 cursor-pointer bg-gradient-to-r hover:from-green-200 hover:to-green-100"
+                    className="rounded-[20px] bg-white p-5 border hover:border-4 hover:border-green-50 cursor-pointer bg-gradient-to-r hover:from-green-200 hover:to-green-100"
                   >
                     <div className="flex items-center justify-between space-x-3 md:space-x-10">
                       <h1 className="text-xl py-3 font-semibold text-gray-900">
@@ -138,13 +138,13 @@ export default function Home() {
       </section>
 
 
-      <section className="bg-white">
+      <section className="bg-gray-50">
         <div className="w-[95%] md:w-[90%] mx-auto py-16">
         <h1
                 style={{lineHeight:1.3}}
                 className="font-semibold text-center text-5xl md:text-7xl"
               >
-                We make your <br />
+               Let us make your <br />
                 business a
                 <span
                   className="border-b-4 text-[#007aff] border-gray-200 pb-2 font-extrabold"
@@ -154,9 +154,17 @@ export default function Home() {
           <div className="py-10">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
               {
-                services.map((item: any, i: number) => <div key={item.title}>
-                  <div className="border border-gray-100 p-5">
-                   Service {i+1}
+                services.map((item: any, i: number) => <div key={item.title} className="cursor-pointer">
+                  <div className="border border-gray-100 bg-white hover:bg-green-100 rounded-xl h-full">
+                  <img src={item.img} alt="" 
+                      className="w-full h-full object-cover rounded-t-xl max-h-[200px]"
+                      />
+                  <div className="p-5">
+                  <h1 className="text-lg md:text-2xl font-semibold  bg-gradient-to-r from-green-600 to-blue-600  inline-block text-transparent bg-clip-text font-extrabold">{item.title}</h1>
+                 <p className="pt-3 text-[#5f6368]">
+                 Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                 </p>
+                  </div>
                   </div>
                 </div>)
               }
