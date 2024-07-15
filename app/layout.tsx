@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
 import GotopButton from '@/components/gotoTop';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+import GoogleAnalytics from './GoogleAnalytics';
 
 
 export const metadata: Metadata = {
@@ -19,7 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-       <GoogleAnalytics />
       <body className='bg-white'>
         <Navbar />
         {children}
@@ -27,6 +26,7 @@ export default function RootLayout({
         <Footer />
         <GotopButton />
       </body>
+      <GoogleAnalytics />
     </html>
   );
 }
