@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { ArrowRightIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import Image from 'next/image'
 import navbarItems from '@/data/navbarItems'
 import { usePathname } from 'next/navigation'
+import Brand from '../brand'
 
 
 const navigation = navbarItems
@@ -37,17 +37,7 @@ export default function PublicNavbar() {
         <nav className='w-[95%] mx-auto px-2 py-3 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
             <div>
-              <Link href={"/"} className='text-xl md:text-2xl flex items-center space-x-2 text-white font-bold'>
-                <Image
-                  className="h-10 w-10 w-auto rounded-full"
-                  src="/logo.png"
-                  alt=""
-                  height={50} width={50}
-                />
-                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled ? 'to-green-600' : 'to-green-500'}  inline-block text-transparent bg-clip-text font-extrabold`}>
-                  Mevinai</span
-                >
-              </Link>
+              <Brand isScrolled={isScrolled} />
             </div>
             <div className="hidden md:block md:pl-5">
               {navigation.map((item: any) => (
@@ -94,17 +84,7 @@ export default function PublicNavbar() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link href={"/"} className='text-3xl md:text-4xl flex items-center space-x-2 text-white font-bold'>
-                <Image
-                  className="h-12 w-12 w-auto"
-                  src="/logo.png"
-                  alt=""
-                  height={50} width={50}
-                />
-                <span className="bg-gradient-to-r from-[#8261e9] to-green-600 inline-block text-transparent bg-clip-text font-extrabold">
-                  Mevinai</span
-                >
-              </Link>
+              <Brand isScrolled={isScrolled} />
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -121,7 +101,7 @@ export default function PublicNavbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base  hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       <span className={`${pathname == item.href ? 'text-blue-600' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>

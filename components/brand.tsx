@@ -1,22 +1,23 @@
 
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image'
+import Image from 'next/image';
+
 import Link from 'next/link'
 import React from 'react'
 
-export default function Brand() {
+export default function Brand({isScrolled}:any) {
 
     return (
-        <Link href="/"
-            className='flex items-center space-x-2 text-white'
-        >
-            <span className={`bg-gradient-to-r from-[#007aff] to-green-600 inline-block rounded-xl p-1`}>
-                <CodeBracketIcon className="h-8 w-8" aria-hidden="true" />
-            </span>
-            <span className={`text-xl leading-6 bg-gradient-to-r from-[#007aff] to-green-600 inline-block text-transparent bg-clip-text font-extrabold`}>
-                Code with Mesfin
-            </span>
-
-        </Link>
+        <Link href={"/"} className='text-xl md:text-2xl flex items-center space-x-2 text-white font-bold'>
+                <Image
+                  className="h-10 w-10 w-auto rounded-full"
+                  src="/logo.png"
+                  alt=""
+                  height={50} width={50}
+                />
+                <span className={` bg-gradient-to-r from-[#f9904b] ${isScrolled ? 'to-green-600' : 'to-green-500'}  inline-block text-transparent bg-clip-text font-extrabold`}>
+                  Mevinai</span
+                >
+              </Link>
     )
 }
