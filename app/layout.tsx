@@ -34,6 +34,7 @@ export default function RootLayout({
         <GotopButton />
       </body>
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
+      <meta name="facebook-domain-verification" content={`${process.env.NEXT_PUBLIC_FACEBOOK_DOAMIN_NAME}`} />
     </html>
   );
 }
