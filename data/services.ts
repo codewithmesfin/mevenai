@@ -92,7 +92,7 @@ const processes=[
 
 const teams=[
   {
-    img:"https://scontent.fadd2-1.fna.fbcdn.net/v/t1.6435-9/75539950_103125554484664_7945799972748787712_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=7oDjGypE4csQ7kNvgFFurWw&_nc_ht=scontent.fadd2-1.fna&oh=00_AYDCXdGwMQUZU7KHvmzsnVy-SJ_ckL_JZuRNGsbKPs3Edw&oe=66C359A2",
+    img:"https://codewithmesfin.et/_next/image?url=%2Fimages%2Fmesfin.png&w=828&q=75",
     title:"Mesfin Tsegaye",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
