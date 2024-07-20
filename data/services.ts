@@ -98,13 +98,13 @@ const teams=[
     href:"https://codewithmesfin.et"
   },
   {
-    img:"https://framerusercontent.com/images/Z4kmYBAi7pNNnGeW41ZiDk92B9c.jpg?scale-down-to=1024",
+    img:"https://scontent.fadd1-1.fna.fbcdn.net/v/t1.18169-9/16807523_672794039568790_3119287987236307484_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_ohc=Lcr72X50JT4Q7kNvgFOq4lb&_nc_ht=scontent.fadd1-1.fna&oh=00_AYAbgWziD9nAsCb1RVrKrRoDsgwr9MqHrRLHOzrkgxEocw&oe=66C34028",
     title:"Mulugeta Baynekaw",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
   },
   {
-    img:"https://avatars.githubusercontent.com/u/77890934?v=4",
+    img:"https://techethio.com/_next/static/media/sinatayehu.4a3ecf7d.png",
     title:"Sintayehu Shibeshi",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
