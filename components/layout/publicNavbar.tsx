@@ -33,46 +33,38 @@ export default function PublicNavbar() {
 
   return (
     <div>
-      <header className={`fixed inset-x-0 top-0 z-50  ${isScrolled ? 'bg-white border-b border-gray-200' : 'bg-white'}`}>
-        <nav className='w-[95%] mx-auto px-2 py-3 flex flex justify-between items-center'>
+      <header className={`fixed w-[90%] md:max-w-4xl mx-auto inset-x-0 rounded-xl top-5 md:top-8 z-50 bg-gray-900 border border-gray-800`}>
+        <nav className='w-[95%] mx-auto px-2 py-2 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
             <div>
               <Brand isScrolled={isScrolled} />
             </div>
-            <div className="hidden md:block md:pl-5">
-              {navigation.map((item: any) => (
-                <Link key={item.name} href={item.href}
-                  className={`px-3 py-3 rounded-lg`}>
 
-                  <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled ? 'text-[#5f6368]' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
-                </Link>
-              ))}
-            </div>
+          </div>
+
+          <div className="hidden md:block">
+            {navigation.map((item: any) => (
+              <Link key={item.name} href={item.href}
+                className={`px-3 py-3 rounded-lg`}>
+
+                <span className={`${pathname == item.href ? 'text-green-600' : isScrolled ? 'text-gray-100' : 'text-gray-100'}  hover:text-green-500`}>{item.name}</span>
+              </Link>
+            ))}
           </div>
 
 
           <div className="flex items-center space-x-5 md:space-x-1">
-            <div className='hidden md:flex items-center space-x-5'>
-              <Link
-                href="/contents"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-6 text-[#5f6368] py-2 rounded-lg"
-              ><span>Contact experts</span>
-              </Link>
-              <Link
-                href="/login"
-                className="border border-gray-300 hover:border-gray-600 flex items-center justify-center space-x-3 bg-white px-7 text-[#5f6368] py-2 rounded-lg"
-              ><span>Sign in</span>
-              </Link>
+            <div className='hidden md:flex'>
               <Link
                 href="/register"
-                className="border border-[#0070f3] flex items-center justify-center space-x-3 bg-[#0070f3] hover:bg-blue-500 hover:border-blue-500 px-6 text-white py-2 rounded-lg"
-              ><span>Signup for free</span>
+                className="border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-lg"
+              ><span>Try for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
             <button
               type="button"
-              className="-m-2.5 md:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-600"
+              className="-m-2.5 md:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen(true)}
             >
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -82,12 +74,12 @@ export default function PublicNavbar() {
         </nav>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0a0a0a] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Brand isScrolled={isScrolled} />
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-red-600"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -101,10 +93,10 @@ export default function PublicNavbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base  hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span className={`${pathname == item.href ? 'text-blue-600' : 'text-[#5f6368]'}  hover:text-blue-500`}>{item.name}</span>
+                      <span className={`${pathname == item.href ? 'text-blue-600' : 'text-gray-100'}  hover:text-blue-500`}>{item.name}</span>
                     </Link>
                   ))}
                 </div>

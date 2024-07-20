@@ -2,3 +2,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+title {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 5rem !important;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+p {
+ font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+}
+.title1 {
+  font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1em;
+}
+.italic1 {
+  font-family: "Instrument Serif", "Instrument Serif Placeholder", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0em;
+}

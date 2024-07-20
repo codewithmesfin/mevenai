@@ -38,7 +38,7 @@ export default function GotopButton() {
     return isVisible &&(
         <div
             onClick={scrollToTop}
-            className="rounded-full p-3 fixed bottom-5 right-5 shadow-xl text-white cursor-pointer bg-blue-600"
+            className="rounded-full p-3 fixed bottom-5 right-5 shadow-xl text-white cursor-pointer bg-[#ff4533]"
          
             >
            <ChevronUpIcon className='w-6 h-6' />

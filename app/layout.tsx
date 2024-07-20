@@ -1,3 +1,5 @@
+
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from 'react-hot-toast';
@@ -5,6 +7,9 @@ import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
 import GotopButton from '@/components/gotoTop';
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { AOSInit } from '@/components/aos';
+
+
 
 
 export const metadata: Metadata = {
@@ -17,9 +22,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang='en'>
-      <body className='bg-white'>
+       <AOSInit />
+      <body className='bg-[#0a0a0a]'>
         <Navbar />
         {children}
         <Toaster />
