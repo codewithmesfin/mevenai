@@ -6,7 +6,7 @@ import React from 'react'
 export default function HomeHighlight() {
   return (
     <section className="bg-[#0a0a0a]">
-      <div className="w-[90%] mx-auto" data-aos="fade-up"
+      <div className="w-[90%] mx-auto md:pt-16" data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="3000">
         <div>

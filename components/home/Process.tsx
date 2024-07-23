@@ -24,7 +24,7 @@ export default function HomeProcess() {
                                 Our simple 3-step process to <span className='italic1 text-5xl md:text-7xl'>skyrocket</span> your business.
                             </h1>
                         </div>
-                        <div className="pt-4 mx-auto md:max-w-[600px]">
+                        <div className="pt-6 mx-auto md:max-w-[600px]">
                             <p className='text-gray-400 text-lg md:text-xl text-center'>
                                 From Google ads, to Meta ads, to TikTok ads, and even content
                                 creation, {"we've"} got you covered on everything front.
@@ -41,7 +41,7 @@ export default function HomeProcess() {
                                         />
                                     </div>
                                     <div className=''>
-                                        <h1 className='text-white text-center text-2xl md:text-3xl'>{item.title}</h1>
+                                        <h1 className='text-white text-center text-xl md:text-3xl'>{item.title}</h1>
                                         <p className="text-gray-400 text-center py-3">
                                             {item.subtitle}
                                         </p>

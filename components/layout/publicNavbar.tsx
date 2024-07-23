@@ -57,8 +57,8 @@ export default function PublicNavbar() {
             <div className='hidden md:flex'>
               <Link
                 href="/register"
-                className="border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-lg"
-              ><span>Try for free</span>
+                className="btn border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-lg"
+              ><span>Join for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
