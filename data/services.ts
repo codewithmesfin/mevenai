@@ -92,14 +92,18 @@ const processes=[
 
 const teams=[
   {
-    img:"https://codewithmesfin.et/_next/image?url=%2Fimages%2Fmesfin.png&w=828&q=75",
-    title:"Mesfin Tsegaye",
+    // img:"https://codewithmesfin.et/_next/image?url=%2Fimages%2Fmesfin.png&w=828&q=75",
+    // title:"Mesfin Tsegaye",
+    img:"https://framerusercontent.com/images/d4SpmpLmhUfMZkWsTOukrdAmhg.jpg?scale-down-to=1024",
+    title:"Crystal Lane",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
   },
   {
-    img:"https://scontent.fadd1-1.fna.fbcdn.net/v/t1.18169-9/16807523_672794039568790_3119287987236307484_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_ohc=Lcr72X50JT4Q7kNvgFOq4lb&_nc_ht=scontent.fadd1-1.fna&oh=00_AYAbgWziD9nAsCb1RVrKrRoDsgwr9MqHrRLHOzrkgxEocw&oe=66C34028",
-    title:"Mulugeta Baynekaw",
+    // img:"https://scontent.fadd1-1.fna.fbcdn.net/v/t1.18169-9/16807523_672794039568790_3119287987236307484_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_ohc=Lcr72X50JT4Q7kNvgFOq4lb&_nc_ht=scontent.fadd1-1.fna&oh=00_AYAbgWziD9nAsCb1RVrKrRoDsgwr9MqHrRLHOzrkgxEocw&oe=66C34028",
+    // title:"Mulugeta Baynekaw",
+    img:"https://framerusercontent.com/images/IIK9uqdpvVqpPgAHuhf8s9r4Ee4.jpg?scale-down-to=1024",
+    title:"James Dunn",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
   },
