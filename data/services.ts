@@ -104,8 +104,9 @@ const teams=[
     href:"https://codewithmesfin.et"
   },
   {
-    img:"https://techethio.com/_next/static/media/sinatayehu.4a3ecf7d.png",
-    title:"Sintayehu Shibeshi",
+    // img:"https://techethio.com/_next/static/media/sinatayehu.4a3ecf7d.png",
+    img:"https://framerusercontent.com/images/Z4kmYBAi7pNNnGeW41ZiDk92B9c.jpg?scale-down-to=1024",
+    title:"John Daniel",
     position:"Software Engineer",
     href:"https://codewithmesfin.et"
   },
