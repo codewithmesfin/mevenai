@@ -8,8 +8,8 @@ import React from 'react'
 export default function HomeWitness() {
     return (
         <div data-aos="zoom-in"
-        data-aos-easing="linear"
-        data-aos-duration="2000">
+            data-aos-easing="linear"
+            data-aos-duration="2000">
             <section className='py-10'>
                 <div className="w-[90%] md:w-[90%] mx-auto">
                     <div className='py-7 md:pb-10' data-aos="fade-up"
@@ -51,11 +51,11 @@ export default function HomeWitness() {
                                             <div>
                                                 <h1 className='text-gray-100 text-center text-xl md:text-2xl'>{item.title} </h1>
                                                 <p className="text-gray-400 text-center py-1">{item.subtitle} </p>
-                                                <div className="px-2 md:px-0 py-3 flex items-center space-x-3">
+                                                <div className="py-3 flex items-center space-x-3">
                                                     {item.results.map((result) => <div key={result}
                                                         className='border border-gray-500 rounded-xl'
                                                     >
-                                                        <p className='text-gray-100 px-3 py-2 text-sm'>{result}</p>
+                                                        <p className='px-2 md:px-0 text-gray-100 px-3 py-2 text-sm'>{result}</p>
                                                     </div>)}
                                                 </div>
                                             </div>
