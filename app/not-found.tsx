@@ -1,7 +1,14 @@
 
 /* eslint-disable @next/next/no-img-element */
 
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: 'Mevinai - waiting list',
+  description: 'Get a friendly tech mentors for you.',
+};
+
 
 export default function Home() {
   return (

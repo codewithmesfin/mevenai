@@ -117,4 +117,25 @@ const teams=[
 
 ]
 
-    export {services,cards,helps,processes,teams}
+const witnesses=[
+  {
+    img:"https://framerusercontent.com/images/9QBw3Q4MsVOJCEqeAYvL5ppW4.jpg?scale-down-to=512",
+    title:"Nostalgie",
+    subtitle:"47% increase in new customers.",
+    results:['85% Increase in CTR','36% Reduction in CPR']
+  },
+  {
+    img:"https://framerusercontent.com/images/s7tV0rpKjY1vv8myvsHelcVj9w.jpg?scale-down-to=512",
+    title:"Nostalgie",
+    subtitle:"47% increase in new customers.",
+    results:['85% Increase in CTR','36% Reduction in CPR']
+  },
+  {
+    img:"https://framerusercontent.com/images/Np9wKsF09ZWmakBPt81VBkKPP18.jpg?scale-down-to=1024",
+    title:"Nostalgie",
+    subtitle:"47% increase in new customers.",
+    results:['85% Increase in CTR','36% Reduction in CPR']
+  }
+]
+
+    export {services,cards,helps,processes,teams,witnesses}

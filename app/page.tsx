@@ -5,6 +5,7 @@ import HomeHighlight from "@/components/home/highlight";
 import HomeIntro from "@/components/home/intro";
 import HomeMainService from "@/components/home/mainService";
 import HomeProcess from "@/components/home/Process";
+import HomeWitness from "@/components/home/Witness";
 import OnboardingSection from "@/components/onboardSection";
 
 
@@ -19,6 +20,8 @@ export default function Home() {
       <HomeHelps />
 
       <HomeMainService />
+
+      <HomeWitness />
 
       <HomeProcess />
 

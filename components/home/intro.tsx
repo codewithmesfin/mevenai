@@ -44,7 +44,7 @@ export default function HomeIntro() {
               className=" flex justify-evenly items-center space-x-1 md:space-x-3 border border-[#ff4533] rounded-xl bg-[#ff4533] hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
             >
               <Cog8ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
-              <span>Signup for free</span>
+              <span>Join for free</span>
               <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
             </Link>
             <Link

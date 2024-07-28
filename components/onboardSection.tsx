@@ -44,7 +44,7 @@ export default function OnboardSection() {
           <div className='mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10'>
             {
               teams.map((item, i) => <div key={item.title}>
-                <div className='h-full md:max-h-[450px] border border-gray-800 cursor-pointer rounded-[30px] bg-gradient-to-r from-gray-900 via-gray-500 to-gray-600 hover:from-blue-900 hover:to-green-900'>
+                <div className='h-full md:max-h-[450px] border border-gray-900 cursor-pointer rounded-[30px] bg-gradient-to-r from-gray-900 via-gray-500 to-gray-600 hover:from-blue-900 hover:to-green-900'>
 
                   <div className="relative max-w-xl mx-auto h-full">
                     <img
