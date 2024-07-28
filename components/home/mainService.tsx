@@ -10,7 +10,6 @@ export default function HomeMainService() {
                     <h1 className='text-gray-200 text-center'>Technologies</h1>
                 </div>
                 <h1
-                    style={{ lineHeight: 1.3 }}
                     className="font-semibold text-center text-4xl md:text-7xl text-white"
                 >
                     Our <span className='italic1 text-5xl md:text-8xl'> experts</span> can
