@@ -6,15 +6,16 @@ export default function HomeMainService() {
     return (
         <section className="bg-[#0a0a0a]">
             <div className="w-[95%] md:w-[90%] mx-auto pb-16">
-            <div className="mb-5 mx-auto w-32 border border-gray-800 p-2 rounded-xl">
-                                <h1 className='text-gray-200 text-center'>Technologies</h1>
-                            </div>
+                <div className="mb-5 mx-auto w-32 border border-gray-800 p-2 rounded-xl">
+                    <h1 className='text-gray-200 text-center'>Technologies</h1>
+                </div>
                 <h1
                     style={{ lineHeight: 1.3 }}
                     className="font-semibold text-center text-4xl md:text-7xl text-white"
                 >
-                    We have expertice in <span className='hidden md:inline'><br /></span>
-                    emerging technologies
+                    Our <span className='italic1 text-5xl md:text-8xl'> experts</span> can 
+                    <span className='hidden md:inline'><br /></span>
+                    <span className='italic1 text-5xl md:text-8xl'> proudly</span> help you with:
                 </h1>
                 <div className="py-10 md:py-24 md:pb-10">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
