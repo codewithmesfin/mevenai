@@ -51,7 +51,7 @@ export default function HomeWitness() {
                                             <div>
                                                 <h1 className='text-gray-100 text-center text-xl md:text-2xl'>{item.title} </h1>
                                                 <p className="text-gray-400 text-center py-1">{item.subtitle} </p>
-                                                <div className="py-3 flex items-center space-x-3">
+                                                <div className="px-2 md:px-0 py-3 flex items-center space-x-3">
                                                     {item.results.map((result) => <div key={result}
                                                         className='border border-gray-500 rounded-xl'
                                                     >
