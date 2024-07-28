@@ -9,12 +9,10 @@ export default function HomeMainService() {
                 <div className="mb-5 mx-auto w-32 border border-gray-800 p-2 rounded-xl">
                     <h1 className='text-gray-200 text-center'>Technologies</h1>
                 </div>
-                <h1
-                    className="font-semibold text-center text-4xl md:text-7xl text-white"
-                >
+                <h1 className="font-semibold text-center text-4xl md:text-7xl text-white py-1">
                     Our <span className='italic1 text-5xl md:text-8xl'> experts</span> can
                     <br />
-                    <span className='italic1 text-5xl md:text-8xl'> proudly</span> help you with:
+                    <span className='italic1 text-5xl md:text-8xl py-1'> proudly</span> help you with:
                 </h1>
                 <div className="py-10 md:py-24 md:pb-10">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
