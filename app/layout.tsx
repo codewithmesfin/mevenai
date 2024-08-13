@@ -8,6 +8,7 @@ import Navbar from '@/components/layout/navbar';
 import GotopButton from '@/components/gotoTop';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { AOSInit } from '@/components/aos';
+import GetStartedButton from '@/components/getStarted';
 
 
 
@@ -26,12 +27,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
        <AOSInit />
-      <body className='bg-[#0a0a0a]'>
+      <body className='bg-[#0a0a0a] h-screen'>
         <Navbar />
         {children}
         <Toaster />
         <Footer />
         <GotopButton />
+        <GetStartedButton/>
       </body>
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
       <meta name="facebook-domain-verification" content={`${process.env.NEXT_PUBLIC_FACEBOOK_DOAMIN_NAME}`} />

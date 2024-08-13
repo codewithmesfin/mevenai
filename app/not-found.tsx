@@ -1,8 +1,9 @@
+"use client"
 
-/* eslint-disable @next/next/no-img-element */
 
-import { ArrowLongRightIcon, CheckBadgeIcon, StarIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Mevinai - waiting list',
@@ -43,24 +44,24 @@ export default function Home() {
                   on stunning Framer Resources.
                 </h2>
               </div>
-              <div className="py-y">
-                <div className="flex justify-center items-center space-x-2 md:space-x-4">
-                  <div className="w-full md:max-w-[350px] border border-gray-700 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex items-center space-x-2">
-                    <input type="text"
-                      placeholder="Your email address"
-                      className="outline-none bg-gray-800"
-                    />
+              <div className="py-y flex justify-center">
+
+                <Link href="/reachus" className="w-full">
+                <div className="w-full flex justify-center items-center space-x-2 md:space-x-4">
+                  <div className="w-full md:max-w-[350px] border border-gray-700 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex justify-center items-center space-x-2">
+                    <span className="text-gray-500">Your email address</span>
                   </div>
-                  <button className="w-full min-w-[100px] max-w-[170px] border border-gray-800 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex justify-center items-center space-x-2">
+                  <div className="w-full min-w-[100px] max-w-[170px] border border-gray-800 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex justify-center items-center space-x-2">
                     <span>Join Waitlist</span>
                     <ArrowLongRightIcon className="w-6 h-6 hidden md:block" />
-                  </button>
+                  </div>
                 </div>
+                </Link>
               </div>
 
               <div className="mt-5 flex justify-center items-center space-x-3">
                 <img src="/images/img2.png" alt=""
-                className='h-16 w-40'
+                  className='h-16 w-40'
                 />
                 <div className="">
                   <h2 className='text-gray-500 py-1'>Join 2,000+ others who signed up</h2>

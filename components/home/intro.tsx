@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { CalendarIcon, ChevronRightIcon, Cog8ToothIcon, FolderOpenIcon, PhoneIcon, StarIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
+import { ChevronRightIcon,  FolderOpenIcon, PhoneIcon, StarIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
-import TypewriterEffect from '../typeWriterEffect'
 
 export default function HomeIntro() {
   return (
@@ -40,7 +38,8 @@ export default function HomeIntro() {
           </div>
           <div className="flex jusyfiy-evenly md:justify-center items-center  space-x-3 md:space-x-10">
             <Link
-              href="/register"
+              href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
+              target='_blank'
               className="w-[90%] md:max-w-[200px] flex justify-evenly items-center space-x-1 md:space-x-3 border border-[#ff4533] rounded-xl bg-[#ff4533] hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
             >
               <PhoneIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
@@ -48,7 +47,7 @@ export default function HomeIntro() {
               <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
             </Link>
             <Link
-              href="/about"
+              href="/reachus"
               className="w-[90%] md:max-w-[200px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-xl border border-green-600 bg-green-600 hover:border-gray-700 hover:bg-gray-700 text-white px-3 md:px-6 py-3"
             >
               <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
@@ -58,9 +57,6 @@ export default function HomeIntro() {
 
           </div>
         </div>
-        {/* <div className="hidden md:flex -mt-16 rounded-full h-64 md:bg-[url('/images/bg1.png')]  bg-cover">
-         
-        </div> */}
       </div>
 
     </section >
