@@ -33,8 +33,8 @@ export default function PublicNavbar() {
 
   return (
     <div>
-      <header className={`fixed w-[90%] md:max-w-3xl mx-auto inset-x-0 rounded-xl top-5 md:top-8 z-50 bg-gray-800`}>
-        <nav className='w-[95%] mx-auto px-2 py-2 flex flex justify-between items-center'>
+      <header className={`fixed w-[90%] md:max-w-3xl mx-auto inset-x-0 rounded-full top-5 md:top-8 z-50 bg-gray-800`}>
+        <nav className='w-[90%] mx-auto px-2 py-2 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
             <div>
               <Brand isScrolled={isScrolled} />
@@ -45,7 +45,7 @@ export default function PublicNavbar() {
           <div className="hidden md:block">
             {navigation.map((item: any) => (
               <Link key={item.name} href={item.href}
-                className={`px-3 py-3 rounded-lg`}>
+                className={`px-3 py-3 text-sm rounded-lg`}>
 
                 <span className={`${pathname == item.href ? 'text-green-600' : isScrolled ? 'text-gray-100' : 'text-gray-100'}  hover:text-green-500`}>{item.name}</span>
               </Link>
@@ -57,8 +57,8 @@ export default function PublicNavbar() {
             <div className='hidden md:flex'>
               <Link
                 href="/register"
-                className="btn border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-lg"
-              ><span>Join for free</span>
+                className="btn border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-full"
+              ><span>Let's talk</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>

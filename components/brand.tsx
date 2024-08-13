@@ -8,9 +8,9 @@ import React from 'react'
 export default function Brand({ isScrolled }: any) {
 
   return (
-    <Link href={"/"} className='text-lg flex items-center space-x-2 text-white font-bold'>
+    <Link href={"/"} className='flex items-center space-x-2 text-white font-bold'>
       <Image
-        className="h-10 w-10 w-auto rounded-full"
+        className="h-9 w-10 w-auto rounded-full"
         src="/logo.png"
         alt=""
         height={50} width={50}
