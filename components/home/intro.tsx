@@ -9,7 +9,7 @@ export default function HomeIntro() {
   return (
     <section
       className="bg-[#0a0a0a]">
-      <div className="w-[95%] md:w-[95%] mx-auto pt-32 md:pt-24 pb-6">
+      <div className="w-[90%] md:w-[95%] mx-auto pt-32 md:pt-24 pb-6">
 
         <div className="py-10 md:pt-24 md:max-w-4xl mx-auto">
           <div className="flex justify-center items-center space-x-3">
@@ -38,10 +38,10 @@ export default function HomeIntro() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center  space-x-3 md:space-x-10">
+          <div className="flex jusyfiy-evenly md:justify-center items-center  space-x-3 md:space-x-10">
             <Link
               href="/register"
-              className=" flex justify-evenly items-center space-x-1 md:space-x-3 border border-[#ff4533] rounded-xl bg-[#ff4533] hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
+              className="w-[90%] md:max-w-[200px] flex justify-evenly items-center space-x-1 md:space-x-3 border border-[#ff4533] rounded-xl bg-[#ff4533] hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
             >
               <PhoneIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
               <span>Book a call</span>
@@ -49,7 +49,7 @@ export default function HomeIntro() {
             </Link>
             <Link
               href="/about"
-              className=" md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-xl border border-green-600 bg-green-600 hover:border-gray-700 hover:bg-gray-700 text-white px-3 md:px-6 py-3"
+              className="w-[90%] md:max-w-[200px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-xl border border-green-600 bg-green-600 hover:border-gray-700 hover:bg-gray-700 text-white px-3 md:px-6 py-3"
             >
               <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
               <span>Join for free</span>
