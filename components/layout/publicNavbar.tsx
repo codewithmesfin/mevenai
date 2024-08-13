@@ -1,6 +1,4 @@
 "use client"
-
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { ArrowRightIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -58,7 +56,7 @@ export default function PublicNavbar() {
               <Link
                 href="/register"
                 className="btn border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-full"
-              ><span>Let's talk</span>
+              ><span>{"Let's"} talk</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
