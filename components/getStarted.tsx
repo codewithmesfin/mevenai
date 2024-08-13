@@ -3,9 +3,12 @@ import { ArrowRightIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function GetStartedButton() {
  
+  const pathname=usePathname()
+  
 
   const isBrowser = () => typeof window !== 'undefined';
     const [isVisible, setIsVisible] = useState(false);
@@ -28,18 +31,11 @@ export default function GetStartedButton() {
       }
     }, []);
   
-    const scrollToTop = () => {
-      if (isBrowser()) {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-    };
+   
   
 
 
-  return isVisible && (
+  return isVisible && !pathname.includes("/reachus") && (
      <div
       className="w-[250px] mx-auto fixed bottom-5 right-10 left-10"
 
