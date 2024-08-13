@@ -1,8 +1,8 @@
 
 /* eslint-disable @next/next/no-img-element */
 
+import { ArrowLongRightIcon, CheckBadgeIcon, StarIcon } from "@heroicons/react/24/outline";
 import { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Mevinai - waiting list',
@@ -13,30 +13,60 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-   
+
       <section
-        className="bg-green-100 h-screen flex items-center">
-        <div className="w-[90%] mx-auto pt-32">
+        className="bg-[#0a0a0a] flex items-center">
+        <div className="w-[90%] md:w-[80%] mx-auto py-48">
           <div className="">
             <div className="w-full">
-              <div className="mx-auto w-32 h-32 mb-5">
-                <Image
-                  className="h-32 w-32 w-auto rounded-full"
-                  src="/logo.png"
-                  alt=""
-                  height={50} width={50}
-                />
+              <div className="my-3 py-2 rounded-xl border border-gray-800 mx-auto w-[90%] md:max-w-[400px]">
+                <div className="px-3 flex justify-center items-center space-x-3">
+                  <span className="text-gray-300">
+                    <CheckBadgeIcon className="w-5 h-5" />
+                  </span>
+                  <h1 className="text-gray-400 md:text-lg text-center">Amazing Resources Coming Your Way!</h1>
+                </div>
               </div>
-              <h1
-                style={{ lineHeight: 1.2 }}
-                className="text-5xl md:text-8xl font-extrabold bg-gradient-to-r from-blue-600 to-green-600 text-center text-transparent bg-clip-text"
-              >
-                Coming soon
-              </h1>
-              <h2 className="py-6 text-gray-800 text-center text-lg md:text-2xl">
-                Our engineers are working hard to make <br /> this page fully functional.
-                Kindly, we requested you to wait a few days.
-              </h2>
+              <div className="py-4">
+                <h1
+                  style={{ lineHeight: 1.2 }}
+                  className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-gray-400 to-gray-200 text-center text-transparent bg-clip-text"
+                >
+                  Ready to Revolutionize Your business? Join the Mevinai Waitlist Today!
+                </h1>
+              </div>
+              <div className="w-full md:w-[80%] mx-auto">
+                <h2 className="py-6 text-gray-500 text-center text-lg md:text-2xl">
+                  Discover an Array of Incredible Framer Templates and Be Prepared
+                  for an Exciting Wave of New Resources on the Horizon. Sign up to
+                  Our Waitlist to be notified when we launch so you don't miss out
+                  on stunning Framer Resources.
+                </h2>
+              </div>
+              <div className="py-y">
+                <div className="flex justify-center items-center space-x-2 md:space-x-4">
+                  <div className="w-full md:max-w-[350px] border border-gray-700 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex items-center space-x-2">
+                    <input type="text"
+                      placeholder="Your email address"
+                      className="outline-none bg-gray-800"
+                    />
+                  </div>
+                  <button className="w-full min-w-[100px] max-w-[170px] border border-gray-800 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex justify-center items-center space-x-2">
+                    <span>Join Waitlist</span>
+                    <ArrowLongRightIcon className="w-6 h-6 hidden md:block" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="mt-5 flex justify-center items-center space-x-3">
+                <img src="/images/img2.png" alt=""
+                className='h-16 w-40'
+                />
+                <div className="">
+                  <h2 className='text-gray-500 py-1'>Join 2,000+ others who signed up</h2>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
