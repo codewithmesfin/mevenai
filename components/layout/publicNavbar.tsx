@@ -33,7 +33,7 @@ export default function PublicNavbar() {
 
   return (
     <div>
-      <header className={`fixed w-[90%] md:max-w-3xl mx-auto inset-x-0 rounded-full top-5 md:top-8 z-50 bg-gray-800`}>
+      <header className={`fixed w-[90%] md:max-w-3xl mx-auto inset-x-0 rounded-full top-5 md:top-8 z-50 border border-gray-900 bg-[#0a0a0a]`}>
         <nav className='w-[90%] mx-auto px-2 py-2 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
             <div>
