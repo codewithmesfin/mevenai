@@ -1,6 +1,6 @@
 "use client"
 import { ArrowRightIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
-import Reachus from './reachus';
+
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
