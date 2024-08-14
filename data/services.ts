@@ -68,21 +68,21 @@ const helps = [
 ]
 const processes = [
   {
-    img: "https://lh3.googleusercontent.com/Yi4ZbA910FcdtDw11BLuUbxfoAfSV4JXekJLfb5EFYaOFiFH5ulDXuFF_9J43OPACLvWy5y-ciQvcW_8fmAjIi3KLzhNq5pSW_2XrxvYHAGL0BQF9PCv_ZD1PjH5MVVk8aRiYHAz",
-    title: "Funnel Audit",
-    subtitle: "We'll start by analysing your sales funnel and seeing what's holding you back."
+    title: "Book a Meeting",
+    subtitle: "Schedule a time to discuss your needs and goals.",
+    icon: "📅"
   },
   {
-    img: "https://cdn-icons-png.freepik.com/512/7195/7195322.png",
-    title: "Campaign Setup",
-    subtitle: "Then, with your business goals in mind, we will set up the advertising campaigns."
+    title: "Discuss with Mevinai",
+    subtitle: "Collaborate with our team to find the best solutions.",
+    icon: "💬"
   },
   {
-    img: "https://static.vecteezy.com/system/resources/thumbnails/018/877/249/small_2x/profit-financial-graph-icon-in-black-circle-png.png",
-    title: "Maximize Profit",
-    subtitle: "We'll then work towards driving the cost per action down to maximise profit."
+    title: "Do the Solution",
+    subtitle: "Implement the agreed-upon solution to meet your needs.",
+    icon: "⚙️"
   }
-]
+];
 
 const teams = [
   {

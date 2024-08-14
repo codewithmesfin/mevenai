@@ -1,5 +1,6 @@
 
 
+import OnboardSection from "@/components/onboardSection";
 import { features, socials, values } from "@/data/aboutus";
 import { ArrowRightIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -169,7 +170,7 @@ export default function About() {
                         <h1
                             style={{ lineHeight: 1.2 }}
                             className="py-4 text-4xl text-center md:text-8xl font-extrabold text-white">
-                            What We Stand For
+                            We stand for
                         </h1>
                     </div>
                     <div className="w-full py-6 md:py-16">
@@ -198,25 +199,9 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="bg-gray-800 py-24">
-                <div className="w-[90%] md:max-w-4xl mx-auto">
-                    <h1 style={{ lineHeight: 1.3 }} className='text-white text-center text-2xl md:text-4xl'>
-                        Here at Conversion, we focus on returns. {"We're"} dedicated to
-                        scaling your brand with paid advertising. Break free and take
-                        your brand to next level.
-                    </h1>
-                    <div className="flex justify-center py-10">
-                        <Link
-                            href="/services"
-                            className=" flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
-                        >
-                            <span>Book a 30-min call</span>
-                            <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-                        </Link>
-                    </div>
-                </div>
-            </section >
-
+            <section className="bg-gray-800">
+                <OnboardSection/>
+            </section>
 
         </>
     );

@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { helps, processes } from '@/data/services'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
+import {  processes } from '@/data/services'
 import React from 'react'
 
 export default function HomeProcess() {
@@ -36,9 +34,7 @@ export default function HomeProcess() {
                             {
                                 processes.map((item, i) => <div key={item.title} >
                                     <div className="pb-5 flex justify-center">
-                                        <img src={item.img} alt={item.title}
-                                        className='rounded-full h-24 w-24'
-                                        />
+                                       <h1 className='text-6xl'>{item.icon} </h1>
                                     </div>
                                     <div className=''>
                                         <h1 className='text-white text-center text-xl md:text-3xl'>{item.title}</h1>

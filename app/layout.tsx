@@ -2,7 +2,6 @@
 
 import type { Metadata } from 'next';
 import './globals.css';
-import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
 import GotopButton from '@/components/gotoTop';
@@ -30,7 +29,6 @@ export default function RootLayout({
       <body className='bg-[#0a0a0a] h-screen'>
         <Navbar />
         {children}
-        <Toaster />
         <Footer />
         <GotopButton />
         <GetStartedButton/>

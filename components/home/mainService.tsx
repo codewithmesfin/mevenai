@@ -18,7 +18,7 @@ export default function HomeMainService() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
                         {
                             services.map((item: any, i: number) => <div
-                                data-aos={i % 2 == 0 ? 'fade-up' : 'fade-down'}
+                                data-aos={i % 2 == 0 ? 'flip-up' : 'flip-down'}
                                 data-aos-easing="linear"
                                 data-aos-duration="3000"
                                 key={item.title} className="cursor-pointer">

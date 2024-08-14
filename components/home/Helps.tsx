@@ -49,8 +49,10 @@ export default function HomeHelps() {
                 <div data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="3000">
-                    <div className="pt-32 mx-auto md:max-w-5xl" >
-                        <h1 style={{ lineHeight: 1.3 }} className='text-white text-center text-4xl md:text-4xl'>Here at Conversion, we focus on returns. {"We're"} dedicated to
+                    <div className="pt-32 mx-auto w-[90%] md:max-w-5xl" >
+                        <h1 style={{ lineHeight: 1.3 }} 
+                        className='text-white text-center text-2xl md:text-4xl'>
+                            Here at Conversion, we focus on returns. {"We're"} dedicated to
                             scaling your brand with paid advertising. Break free and take
                             your brand to next level.
                         </h1>
