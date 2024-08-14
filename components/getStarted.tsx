@@ -35,13 +35,14 @@ export default function GetStartedButton() {
   
 
 
-  return isVisible && !pathname.includes("/reachus") && (
+  return isVisible  && (
      <div
       className="w-[250px] mx-auto fixed bottom-5 right-10 left-10"
 
     >
      <div className='rounded-full px-5 py-3 shadow-xl text-white cursor-pointer bg-[#ff4533]'>
-          <Link href={'/reachus'}
+          <Link href={'https://vuzksec0s2e.typeform.com/to/I8GPTb07'}
+          target='_blank'
             className='flex justify-center items-center space-x-1 md:space-x-3'
           >
             <Cog6ToothIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />

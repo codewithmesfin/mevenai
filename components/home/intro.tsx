@@ -47,7 +47,8 @@ export default function HomeIntro() {
               <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
             </Link>
             <Link
-              href="/reachus"
+              href="https://vuzksec0s2e.typeform.com/to/I8GPTb07"
+              target='_blank'
               className="w-[90%] md:max-w-[200px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-xl border border-green-600 bg-green-600 hover:border-gray-700 hover:bg-gray-700 text-white px-3 md:px-6 py-3"
             >
               <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />

@@ -46,7 +46,9 @@ export default function Home() {
               </div>
               <div className="py-y flex justify-center">
 
-                <Link href="/reachus" className="w-full">
+                <Link href="https://vuzksec0s2e.typeform.com/to/I8GPTb07"
+                target="_blank"
+                className="w-full">
                 <div className="w-full flex justify-center items-center space-x-2 md:space-x-4">
                   <div className="w-full md:max-w-[350px] border border-gray-700 bg-gray-800 text-gray-200 font-semibold px-3 py-3 rounded-xl flex justify-center items-center space-x-2">
                     <span className="text-gray-500">Your email address</span>
