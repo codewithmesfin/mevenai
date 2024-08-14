@@ -38,10 +38,10 @@ export default function Home() {
               </div>
               <div className="w-full md:w-[80%] mx-auto">
                 <h2 className="py-6 text-gray-500 text-center text-lg md:text-2xl">
-                  Discover an Array of Incredible Framer Templates and Be Prepared
+                  Discover an Array of Incredible Mevinai services and Be Prepared
                   for an Exciting Wave of New Resources on the Horizon. Sign up to
                   Our Waitlist to be notified when we launch so you {"don't"} miss out
-                  on stunning Framer Resources.
+                  on stunning Mevinai Resources.
                 </h2>
               </div>
               <div className="py-y flex justify-center">
