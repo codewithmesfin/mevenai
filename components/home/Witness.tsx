@@ -41,21 +41,21 @@ export default function HomeWitness() {
                             witnesses.map((item, i) => <div key={item.title}>
                                 <div className='h-full md:max-h-[450px] border border-gray-900 cursor-pointer rounded-[30px] bg-gradient-to-r from-gray-900 via-gray-500 to-gray-600 hover:from-blue-900 hover:to-green-900'>
 
-                                    <div className="relative max-w-xl mx-auto h-full">
+                                    <div className="relative max-w-xl mx-auto h-full ">
                                         <img
-                                            className="h-full brightness-100 w-full object-cover rounded-[30px]"
+                                            className="h-full brightness-50 w-full object-cover rounded-[30px]"
                                             src={item.img}
                                             alt="Random image"
                                         />
                                         <div className="absolute inset-0 flex items-end bottom-5 justify-center">
                                             <div>
                                                 <h1 className='text-gray-100 text-center text-xl md:text-2xl'>{item.title} </h1>
-                                                <p className="text-gray-400 text-center py-1">{item.subtitle} </p>
+                                                <p className="text-gray-300 text-center py-1">{item.subtitle} </p>
                                                 <div className="py-3 flex items-center space-x-3">
                                                     {item.results.map((result) => <div key={result}
-                                                        className='border border-gray-500 rounded-xl'
+                                                        className='border border-gray-500 px-3 rounded-xl'
                                                     >
-                                                        <p className='px-2 md:px-0 text-gray-100 px-3 py-2 text-sm'>{result}</p>
+                                                        <p className='px-2  md:px-0 text-gray-400 px-3 py-2 text-sm'>{result}</p>
                                                     </div>)}
                                                 </div>
                                             </div>

@@ -109,22 +109,22 @@ const teams = [
 
 const witnesses = [
   {
-    img: "https://framerusercontent.com/images/9QBw3Q4MsVOJCEqeAYvL5ppW4.jpg?scale-down-to=512",
-    title: "Nostalgie",
+    img: "https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Caramel-iced-coffee-f73307b.png?quality=90&resize=700,466",
+    title: "Tesfa Coffee",
     subtitle: "47% increase in new customers.",
     results: ['85% Increase in CTR', '36% Reduction in CPR']
   },
   {
-    img: "https://framerusercontent.com/images/s7tV0rpKjY1vv8myvsHelcVj9w.jpg?scale-down-to=512",
-    title: "Nostalgie",
-    subtitle: "47% increase in new customers.",
-    results: ['85% Increase in CTR', '36% Reduction in CPR']
+    img: "https://t4.ftcdn.net/jpg/06/13/18/61/360_F_613186116_0vjirbmCTn9T0JUW9nxfj7C8c1tjqGGX.jpg",
+    title: "ET Analytica",
+    subtitle: "59% increase in new customers.",
+    results: ['80% Increase in CTR', '61% Reduction in CPR']
   },
   {
-    img: "https://framerusercontent.com/images/Np9wKsF09ZWmakBPt81VBkKPP18.jpg?scale-down-to=1024",
-    title: "Nostalgie",
-    subtitle: "47% increase in new customers.",
-    results: ['85% Increase in CTR', '36% Reduction in CPR']
+    img: "https://www.inboundcycle.com/hubfs/AliceDidier.jpg",
+    title: "Alice Didier",
+    subtitle: "10% anual revenue growth.",
+    results: ['9% Increase income', '18% Cost reduction']
   }
 ]
 
