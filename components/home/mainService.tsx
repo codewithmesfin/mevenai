@@ -18,13 +18,15 @@ export default function HomeMainService() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
                         {
                             services.map((item: any, i: number) => <div
-                                data-aos={i % 2 == 0 ? 'flip-up' : 'flip-down'}
-                                data-aos-easing="linear"
-                                data-aos-duration="3000"
+                            data-aos="zoom-in"
+                            data-aos-easing="linear"
+                            data-aos-duration="2000"
                                 key={item.title} className="cursor-pointer">
-                                <div className="border border-gray-800 bg-gray-900 hover:bg-gray-700 rounded-xl h-full">
+                                <div 
+                                className='rounded-[40px] hover:border hover:border-gray-300 bg-gradient-to-r from-gray-900 via-black to-gray-900 hover:from-blue-900 hover:to-green-600'
+                                >
                                     <img src={item.img} alt=""
-                                        className="w-full h-full object-cover rounded-t-xl max-h-[200px]"
+                                        className="w-full h-full object-cover rounded-t-[40px] max-h-[200px]"
                                     />
                                     <div className="p-5">
                                         <h1 className="text-lg md:text-2xl font-semibold  bg-gradient-to-r from-green-600 to-blue-600  inline-block text-transparent bg-clip-text font-extrabold">{item.title}</h1>
