@@ -1,29 +1,25 @@
 const services: any = [
   {
-    img: "https://img.freepik.com/free-vector/flat-design-cms-concept-illustrated_23-2148796510.jpg?t=st=1721037630~exp=1721041230~hmac=ff77f6870f60dd35562d96b4e69a3d4c2f1fa44d0faab4784d9c21b47ddceda8&w=1800",
     title: "Enterprise Software",
-    subtitle: "",
-    availability: "Free"
+    subtitle: "Custom solutions to streamline your business operations and enhance productivity.",
+    icon: "🏢"
   },
   {
-    img: "https://img.freepik.com/free-photo/illustrated-rendering-twin-avatar_23-2151061349.jpg?t=st=1721037723~exp=1721041323~hmac=361e6e53031793824483edb1bea3f3670bc994e1d010f350f2a7f63d5eae08c2&w=1800",
     title: "Artificial Intelligence",
-    subtitle: "",
-    availability: "Free"
+    subtitle: "Innovative AI solutions to automate processes and drive intelligent decision-making.",
+    icon: "🤖"
   },
   {
-    img: "https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_23-2149233374.jpg?t=st=1721037994~exp=1721041594~hmac=ca2a4e365672e35c1ce9c8f565cec5b34d6a5320fe786ac1abd1aa80fd147388&w=1800",
     title: "Online Presence",
-    subtitle: "",
-    availability: "Free"
+    subtitle: "Enhance your digital footprint with tailored web development and SEO strategies.",
+    icon: "🌐"
   },
   {
-    img: "https://img.freepik.com/free-vector/flat-university-background_23-2148165774.jpg?t=st=1723624695~exp=1723628295~hmac=1405316915a12aaa0fe6cd5b250f75a73821d7660cb184b66ec601d1a19adcef&w=1380",
     title: "Graduation Project",
-    subtitle: "",
-    availability: "Free"
+    subtitle: "Professional guidance and support for successful academic and research projects.",
+    icon: "🎓"
   }
-]
+];
 
 const cards = [
   {

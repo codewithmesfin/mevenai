@@ -18,20 +18,20 @@ export default function HomeMainService() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
                         {
                             services.map((item: any, i: number) => <div
-                            data-aos="zoom-in"
-                            data-aos-easing="linear"
-                            data-aos-duration="2000"
+                                data-aos="zoom-in"
+                                data-aos-easing="linear"
+                                data-aos-duration="2000"
                                 key={item.title} className="cursor-pointer">
-                                <div 
-                                className='rounded-[40px] hover:border hover:border-gray-300 bg-gradient-to-r from-gray-900 via-black to-gray-900 hover:from-blue-900 hover:to-green-600'
+                                <div
+                                    className='rounded-[20px] bg-gradient-to-r from-gray-900 to-gray-800 hover:from-blue-900 hover:to-green-900'
                                 >
-                                    <img src={item.img} alt=""
-                                        className="w-full h-full object-cover rounded-t-[40px] max-h-[200px]"
-                                    />
-                                    <div className="p-5">
-                                        <h1 className="text-lg md:text-2xl font-semibold  bg-gradient-to-r from-green-600 to-blue-600  inline-block text-transparent bg-clip-text font-extrabold">{item.title}</h1>
-                                        <p className="pt-3 text-gray-300">
-                                            Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                                    <div className="p-8">
+                                    <h1 className='text-4xl'>{item.icon} </h1>
+                                        <h1 className="py-2 text-lg md:text-2xl font-semibold bg-gradient-to-r from-[#f9904b] to-white inline-block text-transparent bg-clip-text font-extrabold">
+                                            {item.title}
+                                        </h1>
+                                        <p className="text-gray-200">
+                                           {item.subtitle}
                                         </p>
                                     </div>
                                 </div>

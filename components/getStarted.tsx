@@ -37,7 +37,7 @@ export default function GetStartedButton() {
 
   return isVisible  && (
      <div
-      className="w-[250px] mx-auto fixed bottom-5 right-10 left-10"
+      className="w-[250px] mx-auto fixed bottom-5 md:right-10 left-10"
 
     >
      <div className='rounded-full px-5 py-3 shadow-xl text-white cursor-pointer bg-[#ff4533]'>
