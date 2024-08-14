@@ -13,13 +13,13 @@ const services: any = [
   },
   {
     img: "https://img.freepik.com/free-vector/hand-drawn-flat-design-homepage-illustration_23-2149233374.jpg?t=st=1721037994~exp=1721041594~hmac=ca2a4e365672e35c1ce9c8f565cec5b34d6a5320fe786ac1abd1aa80fd147388&w=1800",
-    title: "Cloud Computing",
+    title: "Online Presence",
     subtitle: "",
     availability: "Free"
   },
   {
-    img: "https://img.freepik.com/free-photo/blockchain-technology-cartoon-illustration_23-2151572136.jpg?t=st=1721038270~exp=1721041870~hmac=9035c7aee2e9cc621c92f62189767d4bf2f6d580332b1ce75b54e5a99c79246b&w=1800",
-    title: "Web3.0",
+    img: "https://img.freepik.com/free-vector/flat-university-background_23-2148165774.jpg?t=st=1723624695~exp=1723628295~hmac=1405316915a12aaa0fe6cd5b250f75a73821d7660cb184b66ec601d1a19adcef&w=1380",
+    title: "Graduation Project",
     subtitle: "",
     availability: "Free"
   }
@@ -50,19 +50,19 @@ const cards = [
 
 const helps = [
   {
-    title: "Meta Ads",
+    title: "Mentorship",
     subtitle: "Our team has decades of combined experience creating winning Facebook & Instagram campaigns."
   },
   {
-    title: "Google Ads",
+    title: "ERPNext",
     subtitle: "Put your products in front of active buyers and beat out the competition with expert Google Shopping services."
   },
   {
-    title: "TikTok Ads",
+    title: "Generative AI",
     subtitle: "With over 800 million monthly users in the US, TikTok is the strongest link between your brand and the next generation."
   },
   {
-    title: "Linkedin Ads",
+    title: "Online Ads",
     subtitle: "Our team has decades of combined experience creating winning Facebook & Instagram campaigns."
   },
 ]

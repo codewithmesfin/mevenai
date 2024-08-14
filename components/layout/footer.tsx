@@ -5,7 +5,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <div className="bg-gray-900 z-10">
-            <div className="mx-auto md:w-[100%] py-4">
+            <div className="mx-auto md:w-[100%] py-16">
                 <div className="md:flex md:justify-evenly">
                     <div className="flex flex-wrap justify-center px-3">
                         {
