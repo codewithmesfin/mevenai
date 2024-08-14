@@ -55,12 +55,12 @@ export default function About() {
                         </h1> <div className="w-full md:max-w-4xl mx-auto py-4">
                             <h1
                                 style={{ lineHeight: 1.2 }}
-                                className="text-white text-5xl text-center md:text-7xl font-bold">
+                                className="text-white text-3xl text-center md:text-7xl font-bold">
                                 We are a small team of professional engineers. We are growing.
                             </h1>
                         </div>
                     </div>
-                    <div className="w-full py-16">
+                    <div className="w-full md:py-16">
                         <div className="md:flex items-center md:space-x-20">
                             <div className="w-full md:w-2/5">
                                 <div>
@@ -132,7 +132,7 @@ export default function About() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="w-full md:w-3/5">
+                            <div className="w-full md:w-3/5 pt-16 md:pt-1">
                                 <div className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10'>
                                     {
                                         socials.map((item, i) => <Link key={item.title}
