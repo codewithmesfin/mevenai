@@ -95,7 +95,7 @@ export default function PublicNavbar() {
                       className="-mx-3 block rounded-lg px-3 py-2 text-base"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span className={`${pathname == item.href ? 'text-blue-600' : 'text-gray-100'}  hover:text-blue-500`}>{item.name}</span>
+                      <span className={`${pathname == item.href ? 'text-white' : 'text-gray-400'}`}>{item.name}</span>
                     </Link>
                   ))}
                 </div>
