@@ -45,7 +45,7 @@ export default function PublicNavbar() {
               <Link key={item.name} href={item.href}
                 className={`px-3 py-3 text-sm rounded-lg`}>
 
-                <span className={`${pathname == item.href ? 'text-green-600' : isScrolled ? 'text-gray-100' : 'text-gray-100'}  hover:text-green-500`}>{item.name}</span>
+                <span className={`${pathname == item.href ? 'text-white' : isScrolled ? 'text-gray-400' : 'text-gray-400'}  hover:text-green-500`}>{item.name}</span>
               </Link>
             ))}
           </div>
