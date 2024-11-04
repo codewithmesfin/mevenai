@@ -9,9 +9,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { AOSInit } from '@/components/aos';
 
 
-
-
-
 export const metadata: Metadata = {
   title: 'Mevinai',
   description: 'Mevinai is a small team of Experienced Software Engineers.',
@@ -25,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
-       <AOSInit />
+      <AOSInit />
       <body className='bg-[#0a0a0a] h-screen'>
         <Navbar />
         {children}
