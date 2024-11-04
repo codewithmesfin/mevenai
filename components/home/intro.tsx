@@ -26,14 +26,14 @@ export default function HomeIntro() {
             </h1>
             <div className="py-3 mx-auto md:max-w-3xl">
               <p className="py-3 text-gray-600 text-center text-lg md:text-xl">
-              Discover the ultimate all-in-one solution you've been searching for! 
+              Discover the ultimate all-in-one solution {"you've"} been searching for! 
               <span
                 className='px-1 italic1 bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold'>
                Simple, powerful, and budget-friendly Solution
               </span> – <span className='text-blue-600 italic1 font-semibold'>ERPNext</span>. Go live today with the
               <span
                 className='px-1 italic1 bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold'>
-               world’s #1 free and open-source 
+               {"world’s"} #1 free and open-source 
               </span>enterprise software solution.
               </p>
             </div>
