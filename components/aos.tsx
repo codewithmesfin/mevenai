@@ -11,6 +11,5 @@ export const AOSInit = () => {
       duration: 1000,
     });
   }, [])
-
   return null
 }

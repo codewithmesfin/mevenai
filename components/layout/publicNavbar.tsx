@@ -31,8 +31,8 @@ export default function PublicNavbar() {
 
   return (
     <div>
-      <header className={`fixed w-[90%] md:max-w-3xl mx-auto inset-x-0 rounded-full top-5 md:top-8 z-50 border border-gray-900 bg-[#0a0a0a]`}>
-        <nav className='w-[90%] mx-auto px-2 py-2 flex flex justify-between items-center'>
+      <header className={`fixed sm:w-[90%] lg:max-w-5xl mx-auto inset-x-0 rounded-full top-5 md:top-8 z-50 border border-gray-100 bg-white`}>
+        <nav className='sm:w-[94%] mx-auto px-2 py-2 flex flex justify-between items-center'>
           <div className="flex items-center justify-start space-x-5">
             <div>
               <Brand isScrolled={isScrolled} />
@@ -40,12 +40,12 @@ export default function PublicNavbar() {
 
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             {navigation.map((item: any) => (
               <Link key={item.name} href={item.href}
-                className={`px-3 py-3 text-sm rounded-lg`}>
+                className={`px-3 py-3 text-md rounded-lg`}>
 
-                <span className={`${pathname == item.href ? 'text-white' : isScrolled ? 'text-gray-400' : 'text-gray-400'}  hover:text-green-500`}>{item.name}</span>
+                <span className={`${pathname == item.href ? 'text-blue-600' : isScrolled ? 'text-gray-700' : 'text-gray-700'}  hover:text-green-500`}>{item.name}</span>
               </Link>
             ))}
           </div>
@@ -56,14 +56,14 @@ export default function PublicNavbar() {
               <Link
                 href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
                 target='_blank'
-                className="btn border border-[#ff4533] flex items-center justify-center space-x-3 bg-[#ff4533] hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-full"
-              ><span>{"Let's"} talk</span>
+                className="btn md:text-lg border border-blue-500 flex items-center justify-center space-x-3 bg-blue-600 hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-full"
+              ><span>Try for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
             <button
               type="button"
-              className="-m-2.5 md:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+              className="-m-2.5 lg:hidden inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
               onClick={() => setMobileMenuOpen(true)}
             >
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -72,8 +72,8 @@ export default function PublicNavbar() {
           </div>
         </nav>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0a0a0a] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="fixed w-full inset-0 z-50" />
+          <DialogPanel className="fixed inset-y-0 right-0 left-0 z-50 w-full overflow-y-auto bg-gray-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Brand isScrolled={isScrolled} />
               <button
@@ -92,10 +92,10 @@ export default function PublicNavbar() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base"
+                      className="-mx-3 block text-lg rounded-lg px-3 py-2"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      <span className={`${pathname == item.href ? 'text-white' : 'text-gray-400'}`}>{item.name}</span>
+                      <span className={`${pathname == item.href ? 'text-gray-900' : 'text-gray-700'}`}>{item.name}</span>
                     </Link>
                   ))}
                 </div>

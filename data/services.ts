@@ -20,48 +20,45 @@ const services: any = [
     icon: "🎓"
   }
 ];
-
 const cards = [
   {
-    title: "40+ projects delivered",
-    subtitle:
-      "Proven expertise in turning ideas into reality",
+    title: "120+ SaaS launched",
+    subtitle: "Transforming visionary ideas into groundbreaking solutions!",
     href: "/contact",
-    icon:"🚀"
+    icon: "🚀"
   },
   {
-    title: "Trusted by Leading Startups",
-    subtitle:
-      "Partnered with the best to drive innovation",
+    title: "Trusted by leading companies",
+    subtitle: "Innovating alongside the best to shape the future!",
     href: "/contact",
-    icon:"🤝"
+    icon: "🤝"
   },
   {
     title: "100% Client Satisfaction Rate",
-    subtitle: "We deliver results that exceed expectations",
+    subtitle: "Delivering exceptional results that wow our clients every time!",
     href: "/learn",
-    icon:"🌟"
+    icon: "🌟"
   },
 ];
 
 const helps = [
   {
-    title: "Mentorship",
-    subtitle: "Our team has decades of combined experience creating winning Facebook & Instagram campaigns."
+      title: "Setup your SaaS with a single click",
+      subtitle: "Launch your ERPNext based SaaS platform effortlessly with a one-click setup that simplifies deployment and reduces setup time.",
+      icon: "⚙️"
   },
   {
-    title: "ERPNext",
-    subtitle: "Put your products in front of active buyers and beat out the competition with expert Google Shopping services."
+      title: "All Modules are 100% free",
+      subtitle: "Access a complete suite of powerful ERPNext modules at no cost, designed to cover all your business needs without hidden fees.",
+      icon: "💸"
   },
   {
-    title: "Generative AI",
-    subtitle: "With over 800 million monthly users in the US, TikTok is the strongest link between your brand and the next generation."
+      title: "Pay only for hosting infrastructure",
+      subtitle: "Enjoy full functionality without licensing costs; just pay for the hosting infrastructure, keeping your expenses predictable.",
+      icon: "💻"
   },
-  {
-    title: "Online Ads",
-    subtitle: "Our team has decades of combined experience creating winning Facebook & Instagram campaigns."
-  },
-]
+];
+
 const processes = [
   {
     title: "Book a Meeting",

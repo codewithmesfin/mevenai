@@ -1,38 +1,40 @@
 /* eslint-disable @next/next/no-img-element */
-import { ChevronRightIcon,  FolderOpenIcon, PhoneIcon, StarIcon } from '@heroicons/react/24/outline'
+import { AdjustmentsHorizontalIcon, ArrowPathIcon, ChevronRightIcon, FolderOpenIcon, PhoneIcon, RocketLaunchIcon, StarIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import React from 'react'
 
 export default function HomeIntro() {
   return (
     <section
-      className="bg-[#0a0a0a]">
+      className="bg-white">
       <div className="w-[90%] md:w-[95%] mx-auto pt-32 md:pt-24 pb-6">
 
-        <div className="py-10 md:pt-24 md:max-w-4xl mx-auto">
+        <div className="py-10 md:pt-16 md:max-w-4xl mx-auto">
           <div className="flex justify-center items-center space-x-3">
-            <img src="/images/img2.png" alt=""
-              className='h-16 w-40'
-            />
-            <div className="">
-              <span className='text-white flex'>
-                {[1, 2, 3, 4].map(x => <StarIcon key={x} className="h-4 w-4" fill='#DDDDDD' aria-hidden="true" />)}
-              </span>
-              <h2 className='text-gray-500 py-1'>45+ businesses mentored</h2>
+            <div className='rounded-full bg-[#e9f4ff] text-blue-500 py-3 px-10'>
+              <h1>All in one Software as a Service</h1>
             </div>
           </div>
-          <div className="pt-16 pb-8">
+          <div className="pt-10 pb-8">
             <h1
               style={{ lineHeight: 1.3 }}
-              className={`title1 text-center font-extrabold text-4xl md:text-7xl text-white`}>
-              Get a friendly <span
-                className='italic font-extrabold text-5xl md:text-8xl italic1 bg-gradient-to-r from-[#ff4533] to-green-500 inline-block text-transparent bg-clip-text font-extrabold'>
-                {"tech mentors  "}
-              </span> for you
+              className={`title1 text-center font-extrabold text-4xl md:text-7xl text-[#161c52]`}>
+              Configure your own <br /> <span
+                className='text-5xl md:text-7xl italic1 bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold'>
+                {"ERPNext SaaS "}
+              </span> in 3 minutes
             </h1>
             <div className="py-3 mx-auto md:max-w-3xl">
-              <p className="py-3 text-gray-400 text-center text-lg md:text-xl">
-                If you want to achieve ground-breaking growth with increased sales and profitability with paid ads, then {"you're"} in the right place.
+              <p className="py-3 text-gray-600 text-center text-lg md:text-xl">
+              Discover the ultimate all-in-one solution you've been searching for! 
+              <span
+                className='px-1 italic1 bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold'>
+               Simple, powerful, and budget-friendly Solution
+              </span> – <span className='text-blue-600 italic1 font-semibold'>ERPNext</span>. Go live today with the
+              <span
+                className='px-1 italic1 bg-gradient-to-r from-blue-600 via-blue-600 to-green-600 inline-block text-transparent bg-clip-text font-extrabold'>
+               world’s #1 free and open-source 
+              </span>enterprise software solution.
               </p>
             </div>
           </div>
@@ -40,26 +42,22 @@ export default function HomeIntro() {
             <Link
               href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
               target='_blank'
-              className="w-[90%] md:max-w-[200px] flex justify-evenly items-center space-x-1 md:space-x-3 border border-[#ff4533] rounded-xl bg-[#ff4533] hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
+              className="w-[90%] md:max-w-[230px] flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-500 rounded-full bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3 md:py-4"
             >
-              <PhoneIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
-              <span>Book a call</span>
-              <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+              <ArrowPathIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
+              <span>Get started for free</span>
             </Link>
             <Link
               href="https://vuzksec0s2e.typeform.com/to/I8GPTb07"
               target='_blank'
-              className="w-[90%] md:max-w-[200px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-xl border border-green-600 bg-green-600 hover:border-gray-700 hover:bg-gray-700 text-white px-3 md:px-6 py-3"
+              className="w-[90%] md:max-w-[230px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-full border border-gray-900 hover:border-green-500 hover:bg-green-500 text-gray-800 hover:text-white px-3 md:px-6 py-3 md:py-4"
             >
-              <FolderOpenIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
-              <span>Join for free</span>
-              <ChevronRightIcon path="right" className="h-4 w-4" strokeWidth={2} />
+              <AdjustmentsHorizontalIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
+              <span>Explore marketplace</span>
             </Link>
-
           </div>
         </div>
       </div>
-
     </section >
   )
 }

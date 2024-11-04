@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div>
       <HomeIntro />
-
       <HomeHighlight />
-
       <HomeHelps />
+      
+      {/* 
 
       <HomeMainService />
 
@@ -26,9 +26,8 @@ export default function Home() {
       <HomeProcess />
 
       <section className="py-24">
-        {/* <div className="h-1 w-[70px] bg-gray-700 mx-auto rounded-xl" /> */}
         <OnboardingSection />
-      </section>
+      </section> */}
 
 
     </div>

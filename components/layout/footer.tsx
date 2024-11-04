@@ -22,8 +22,8 @@ export default function Footer() {
                     <h1 className="text-sm text-center text-gray-200 p-3">
                         <Link
                             className="text-white font-extrabold px-1"
-                            href="https://codewithmesfin.et"
-                        >Code With Mesfin</Link>
+                            href="https://mevinai.et"
+                        >Mevinai</Link>
                         - 2023
                     </h1>
                 </div>
