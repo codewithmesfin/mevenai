@@ -62,6 +62,8 @@ export const config = {
     '/configuration', 
     "/products",
     "/docs",
+    "/statistics",
+    "/saas",
     '/dashboard', 
     '/profile', 
     '/settings',

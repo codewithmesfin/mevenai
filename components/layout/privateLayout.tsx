@@ -9,8 +9,7 @@ interface PROPS {
 export default function PrivateLayout({ children }: PROPS) {
 
 
-
-    return <div className={`h-screen w-full flex antialiased text-gray-900 bg-whit overflow-hidden`}>
+    return <div className={`h-full w-full flex antialiased text-gray-900 bg-white`}>
         <div className="flex-1 flex flex-col">
             <main className="flex-grow flex flex-row min-h-0">
                 <Sidebar />

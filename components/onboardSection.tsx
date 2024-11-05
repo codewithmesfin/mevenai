@@ -13,19 +13,19 @@ export default function OnboardSection() {
           <div className='py-7 md:pb-10' data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="3000" >
-            <div className="mb-5 mx-auto w-24 border border-gray-800 p-2 rounded-xl">
-              <h1 className='text-gray-200 text-center'>Team</h1>
+            <div className="mb-5 mx-auto w-24 bg-gray-100 border border-gray-100 p-2 rounded-xl">
+              <h1 className='text-gray-900 text-center'>Team</h1>
             </div>
             <div className='mx-auto md:max-w-4xl'>
               <h1
                 style={{ lineHeight: 1.3 }}
-                className="font-semibold text-center text-4xl md:text-6xl text-white"
+                className="font-semibold text-center text-4xl md:text-6xl text-gray-900"
               >
                 Meet the <span className='italic1 text-5xl md:text-7xl'>incredible</span> team.
               </h1>
             </div>
             <div className="pt-4 mx-auto md:max-w-[600px]">
-              <p className='text-gray-400 text-lg md:text-xl text-center'>
+              <p className='text-gray-600 text-lg md:text-xl text-center'>
                 We pride ourselves of being the best of the best and our
                 team encapsulates that.
               </p>

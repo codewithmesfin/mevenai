@@ -1,6 +1,11 @@
 
 import { useAuth } from '@/app/context/AuthContext';
-import { AdjustmentsHorizontalIcon, ArrowLeftEndOnRectangleIcon, DocumentIcon, HomeIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
+import {
+    AdjustmentsHorizontalIcon,
+    AdjustmentsVerticalIcon,
+    ArrowLeftEndOnRectangleIcon, ChartBarIcon,
+    DocumentIcon, FolderIcon, HomeIcon, SparklesIcon, WrenchScrewdriverIcon
+} from '@heroicons/react/24/outline';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
@@ -31,8 +36,13 @@ export default function Sidebar() {
                 },
                 {
                     title: "Documentations",
-                    icon: <DocumentIcon className="h-4 w-4" />,
+                    icon: <FolderIcon className="h-4 w-4" />,
                     href: "/docs",
+                },
+                {
+                    title: "Statistics",
+                    icon: <ChartBarIcon className="h-4 w-4" />,
+                    href: "/statistics",
                 },
             ]
         },
@@ -45,7 +55,18 @@ export default function Sidebar() {
                     href: "/profile",
                 },
                 {
-                    title: "Log out",
+                    title: "My Company",
+                    icon: <AdjustmentsVerticalIcon className="h-4 w-4" />,
+                    href: "/business",
+                },
+                {
+                    title: "My SaaS",
+                    icon: <SparklesIcon className="h-4 w-4" />,
+                    href: "/saas",
+                    openOnOtherTab:true
+                },
+                {
+                    title: "Log Out",
                     icon: <ArrowLeftEndOnRectangleIcon className="h-4 w-4" />,
                 },
             ]
@@ -107,10 +128,10 @@ export default function Sidebar() {
 
             <div>
                 {
-                    navigations.map((nav: any, index:number) => <div key={nav.title}>
+                    navigations.map((nav: any, index: number) => <div key={nav.title}>
                         <div className={`active-users bg-white flex justify-between flex-row p-2 overflow-auto w-0 min-w-full`}>
                             <ul className="flex flex-col py-4 space-y-1">
-                                {nav.items.map((x:any, i:number) => x.href ? (
+                                {nav.items.map((x: any, i: number) => x.href ? (
                                     <li key={i}>
                                         <Link
                                             href={x.href}
@@ -126,11 +147,11 @@ export default function Sidebar() {
                                     </li>
                                 ) : <li key={i}>
                                     <button className='relative hover:text-green-600 w-full flex flex-row items-center py-2 border-l-4 border-transparent'
-                                     onClick={logout}>
+                                        onClick={logout}>
                                         <span className="inline-flex justify-center items-center ml-4">
                                             <ArrowLeftEndOnRectangleIcon className="h-4 w-4" />
                                         </span>
-                                        <span className="pl-4 text-sm tracking-wide truncate">Log out</span>
+                                        <span className="pl-4 text-sm tracking-wide truncate">{x.title} </span>
                                     </button>
                                 </li>)}
 

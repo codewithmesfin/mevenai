@@ -24,7 +24,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const isValidToken = !isTokenExpired(token); // Define this function based on your token structure
       setIsAuthenticated(isValidToken);
     }
-  }, []);
+  }, [isAuthenticated]);
 
   const login = (token: string) => {
     setToken(token)
