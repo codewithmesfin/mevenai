@@ -33,7 +33,7 @@ export default function Login() {
       .then((res: any) => {
         login(res.data.token)
         setSubmitting(false)
-        show.success("Congratulation! Your account has been created successfully.")
+        show.success("Congratulation! Your have been logged in successfully.")
         router.push('/home');
       })
       .catch(err => {
