@@ -1,22 +1,57 @@
-// middleware.js
+// middleware.ts
 
-import { NextRequest, NextResponse } from 'next/server';
-import { isTokenExpired } from './app/lib/auth';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export function middleware(req:NextRequest) {
-  const publicRoutes = ['/login', '/signup', '/'];
-  const isPublicRoute = publicRoutes.some((path) => req.nextUrl.pathname.startsWith(path));
+export function middleware(request: NextRequest) {
+  // Retrieve the access token from cookies
+  const token = request.cookies.get('accessToken')?.value;
 
-  if (isPublicRoute) return NextResponse.next();
+  const pathname=request.nextUrl.pathname
+  // Debugging: Log token and current path
+  console.log("Access Token:", token); // Debugging
+  console.log("Pathname:", request.nextUrl.pathname); // Debugging
 
-  const token:string = `${req.cookies.get('token')}`;
-  if (!token || isTokenExpired(token)) {
-    return NextResponse.redirect(new URL('/login', req.url));
+  // List of public paths that don't require authentication
+  const publicPaths = ['/auth/login', '/auth/signup', '/', '/about', '/pricing', '/marketplace', '/support'];
+
+  // Check if the requested path is public
+  const isPublicPath = publicPaths.includes(pathname);
+  console.log("Is Public Path:", isPublicPath); // Debugging
+
+  // Define private paths
+  const privatePaths = ['/home', '/setup', '/dashboard', '/profile', '/settings'];
+  const isPrivatePath = privatePaths.includes(pathname);
+
+  // Redirect to login if accessing a protected path without a token
+  if (isPrivatePath && !token) {
+    console.log("Redirecting to login... (no token)");
+    return NextResponse.redirect(new URL('/auth/login', request.url));
   }
 
-  return NextResponse.next();
+  // Redirect authenticated users trying to access public pages
+  if (token && isPublicPath) {
+    console.log("Redirecting to home... (user is authenticated)");
+    return NextResponse.redirect(new URL('/home', request.url));
+  }
+
+  console.log("Continuing to requested route..."); // Debugging
+  return NextResponse.next(); // Continue if conditions are met
 }
 
+// Specify which routes to apply this middleware to
 export const config = {
-  matcher: ['/dashboard/:path*', '/marketplace/:path*', '/setup/:path*', '/profile/:path*', '/settings/:path*'],
+  matcher: [
+    '/home', 
+    '/setup', 
+    '/dashboard', 
+    '/profile', 
+    '/settings',
+    '/auth/login',
+    '/auth/signup',
+    '/about', 
+    '/pricing', 
+    '/marketplace', 
+    '/support',
+  ],
 };

@@ -40,16 +40,14 @@ export default function HomeIntro() {
           </div>
           <div className="flex jusyfiy-evenly md:justify-center items-center  space-x-3 md:space-x-10">
             <Link
-              href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
-              target='_blank'
+              href="/auth/signup"
               className="w-[90%] md:max-w-[230px] flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-500 rounded-full bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3 md:py-4"
             >
               <ArrowPathIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />
               <span>Get started for free</span>
             </Link>
             <Link
-              href="https://vuzksec0s2e.typeform.com/to/I8GPTb07"
-              target='_blank'
+              href="/marketplace"
               className="w-[90%] md:max-w-[230px] md:mt-0 flex justify-evenly items-center space-x-1 md:space-x-3 rounded-full border border-gray-900 hover:border-green-500 hover:bg-green-500 text-gray-800 hover:text-white px-3 md:px-6 py-3 md:py-4"
             >
               <AdjustmentsHorizontalIcon path="right" className="h-5 w-5 hidden md:flex" strokeWidth={2} />

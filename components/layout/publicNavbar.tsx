@@ -54,8 +54,7 @@ export default function PublicNavbar() {
           <div className="flex items-center space-x-5 md:space-x-1">
             <div className='hidden md:flex'>
               <Link
-                href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
-                target='_blank'
+                href="/auth/signup"
                 className="btn md:text-lg border border-blue-500 flex items-center justify-center space-x-3 bg-blue-600 hover:bg-green-500 hover:border-green-500 px-6 text-white py-2 rounded-full"
               ><span>Try for free</span>
                 <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />

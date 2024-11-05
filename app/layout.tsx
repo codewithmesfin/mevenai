@@ -8,6 +8,11 @@ import GotopButton from '@/components/gotoTop';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { AOSInit } from '@/components/aos';
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import { AuthProvider } from './context/AuthContext';
+
+
 
 export const metadata: Metadata = {
   title: 'Mevinai',
@@ -24,10 +29,13 @@ export default function RootLayout({
     <html lang='en'>
       <AOSInit />
       <body className='bg-[#0a0a0a] h-screen'>
-        <Navbar />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </AuthProvider>
         <GotopButton />
+        <ToastContainer />
       </body>
       <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
       <meta name="facebook-domain-verification" content={`${process.env.NEXT_PUBLIC_FACEBOOK_DOAMIN_NAME}`} />
