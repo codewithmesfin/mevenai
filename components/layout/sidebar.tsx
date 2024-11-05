@@ -107,10 +107,10 @@ export default function Sidebar() {
 
             <div>
                 {
-                    navigations.map((nav: any, index) => <div key={nav.title}>
+                    navigations.map((nav: any, index:number) => <div key={nav.title}>
                         <div className={`active-users bg-white flex justify-between flex-row p-2 overflow-auto w-0 min-w-full`}>
                             <ul className="flex flex-col py-4 space-y-1">
-                                {nav.items.map((x, i) => x.href ? (
+                                {nav.items.map((x:any, i:number) => x.href ? (
                                     <li key={i}>
                                         <Link
                                             href={x.href}
@@ -125,7 +125,8 @@ export default function Sidebar() {
                                         </Link>
                                     </li>
                                 ) : <li key={i}>
-                                    <button className='relative hover:text-green-600 w-full flex flex-row items-center py-2 border-l-4 border-transparent' onClick={logout}>
+                                    <button className='relative hover:text-green-600 w-full flex flex-row items-center py-2 border-l-4 border-transparent'
+                                     onClick={logout}>
                                         <span className="inline-flex justify-center items-center ml-4">
                                             <ArrowLeftEndOnRectangleIcon className="h-4 w-4" />
                                         </span>
