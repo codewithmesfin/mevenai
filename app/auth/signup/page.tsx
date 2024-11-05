@@ -12,7 +12,7 @@ import { setToken } from "@/app/lib/auth";
 import { useAuth } from "@/app/context/AuthContext";
 
 export default function Signup() {
-  const {login } = useAuth();
+  const { login } = useAuth();
   const [user, setUser] = useState<any>(null)
   const [formError, setFormError] = useState<any>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -23,27 +23,26 @@ export default function Signup() {
   }, [formError])
 
 
-  const submit = async() => {
+  const submit = async () => {
     setSubmitting(true)
     const payload = {
       ...user,
       "status": "active"
     }
-    api.signup(payload,"/signup")
-    .then((res:any)=>{
-      // console.log(res.data.token)
-    login(res.data.token)
-     
-      setSubmitting(false)
-      show.success("Congratulation! Your account has been created successfully.")
-      router.push('/home');
-    })
-    .catch(err=>{
-      // console.log('Err: ',err)
-      show.error("Unable to create your account. Try againa.")
-      setSubmitting(false)
-    })
-    
+    api.signup(payload, "/signup")
+      .then((res: any) => {
+        // console.log(res.data.token)
+        login(res.data.token)
+        setSubmitting(false)
+        show.success("Congratulation! Your account has been created successfully.")
+        router.push('/home');
+      })
+      .catch(err => {
+        // console.log('Err: ',err)
+        show.error("Unable to create your account. Try againa.")
+        setSubmitting(false)
+      })
+
   }
 
 

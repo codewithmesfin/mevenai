@@ -32,7 +32,7 @@ export function middleware(request: NextRequest) {
   console.log("Is Public Path:", isPublicPath); // Debugging
 
   // Define private paths
-  const privatePaths = ['/home', '/setup', '/dashboard', '/profile', '/settings'];
+  const privatePaths = ['/home', '/setup','/configuration','/products', '/dashboard', '/profile', '/settings'];
   const isPrivatePath = privatePaths.includes(pathname);
 
   // Check if token is valid (exists and is not expired)

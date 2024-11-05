@@ -13,14 +13,14 @@ export default function ProductCard({ item, index }: any) {
       // data-aos={index % 2 == 0 ? 'fade-down' : 'fade-up'}
       // data-aos-duration={2000 + index * 10}
       style={{ backgroundColor: item.bg }}
-      className="border relative border-gray-100 cursor-pointer h-full rounded-xl hover:border-4"
+      className="border relative border-gray-100 h-full rounded-xl hover:border-4"
     >
       <div>
         <div>
           <div className={`${item.free ? 'bg-gradient-to-r from-blue-400  to-green-400' : 'bg-gradient-to-r from-blue-400 to-red-400'} text-sm text-white rounded-tr-xl rounded-bl-lg absolute flex justify-center items-center w-16 h-10 right-0 p-4`}>
             {item.free ? 'FREE' : "PRO"}
           </div>
-          <div className="h-full md:h-[300px] w-full">
+          <div className="h-full md:h-[200px] w-full">
             <img src={item.image} alt="" className="object-cover rounded-t-xl w-full h-full" />
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function ProductCard({ item, index }: any) {
           <div className="mt-5">
             <div className="w-full">
               <button
-                className="rounded-full text-sm md:text-lg text-white flex items-center justify-evenly space-x-2 bg-gray-900 py-3 px-3"
+                className="rounded-full text-sm md:text-lg text-white flex items-center justify-evenly space-x-2 bg-blue-600 hover:bg-green-600 py-3 px-3 w-full"
               >
                 <span>Install module</span>
                 <ChevronRightIcon className="w-4 h-4 md:w-6 md:h-6" />
