@@ -5,7 +5,7 @@
 
 import { useAuth } from '@/app/context/AuthContext';
 import dynamic from 'next/dynamic'
-import { usePathname} from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 const PrivateLayout = dynamic(() => import('./privateLayout'), { ssr: false })
 const PublicNavbar = dynamic(() => import('./publicNavbar'), { ssr: false })
@@ -20,9 +20,11 @@ const CustomLayout = ({ children }: PROPS) => {
   const { isAuthenticated } = useAuth();
   const pathname = usePathname()
 
-  const isLandingPage= pathname==="/"
+  const isLandingPage = pathname === "/"
 
-  return isAuthenticated ? <PrivateLayout children={children} /> : <>
+  return isAuthenticated ? <PrivateLayout>
+    {children}
+  </PrivateLayout> : <>
     <PublicNavbar />
     {children}
   </>

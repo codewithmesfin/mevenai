@@ -30,7 +30,7 @@ export default function RootLayout({
         <AuthProvider>
       <AOSInit />
       <body className='bg-[#0a0a0a] h-screen'>
-          <CustomLayout children={children} />
+          <CustomLayout>{children} </CustomLayout>
           <Footer />
         <GotopButton />
         <ToastContainer />
