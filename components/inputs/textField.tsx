@@ -45,7 +45,11 @@ export default function TextField({
                 placeholder={placeholder}
                 value={value}
                 onChange={(e: any) => onChange(e.target.value)}
-                className={`px-3 ${error ? 'border-red-600 border' : 'border-0'} block w-full rounded-md  py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6`}
+                className={`px-3 ${error ? 'border-red-600 border' : 'border-0'} 
+                            block w-full rounded-md  py-2.5 text-gray-900 shadow-sm 
+                            ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+                            focus:ring-2 focus:ring-inset focus:ring-blue-600`
+                }
             />
         </div>
         <div>

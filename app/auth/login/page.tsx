@@ -56,7 +56,7 @@ export default function Login() {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full md:max-w-xs">
+        <div className="mt-10 sm:mx-auto sm:w-full md:max-w-sm">
           <div className="space-y-6" >
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
 
@@ -75,14 +75,12 @@ export default function Login() {
                 />
               </div>
 
-
-
               <div>
                 <TextField
                   label={
                     <div className="flex justify-between space-x-4">
                       <span>Password</span>
-                      <Link href="/auth/login" className="px-1 text-indigo-600 hover:text-indigo-500">
+                      <Link href="/auth/login" className="px-1 text-blue-600 hover:text-blue-500">
                         Forgot password
                       </Link>
                     </div>
@@ -105,7 +103,7 @@ export default function Login() {
               <button
                 onClick={submit}
                 disabled={!validate.signinForm(formError) || submitting}
-                className={`${validate.signinForm(formError) && !submitting ? 'bg-indigo-600 focus-visible:outline-indigo-600 hover:bg-indigo-500' : 'bg-gray-400'} flex w-full justify-center items-center space-x-2 rounded-md  px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}
+                className={`${validate.signinForm(formError) && !submitting ? 'bg-blue-600 hover:bg-green-500' : 'bg-gray-400'} flex w-full justify-center items-center space-x-2 rounded-md  px-3 py-2.5 text-sm/6 font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}
               >
                 {submitting && <LoadingIndicator color="fill-blue-600" />}
                 {submitting ? <span>Trying to login ...</span> : <span>Sign in</span>}
@@ -114,8 +112,8 @@ export default function Login() {
           </div>
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
-            Not a member ?
-            <Link href="/auth/signup" className="px-1 font-semibold text-indigo-600 hover:text-indigo-500">
+            Not a member?
+            <Link href="/auth/signup" className="px-2 font-semibold text-blue-600 hover:text-blue-500">
               Start a 7 day free trial
             </Link>
           </p>

@@ -1,4 +1,4 @@
-// app/(public)/page.js
+// app//page.js
 
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { getMeta } from '../lib/seo';
@@ -16,9 +16,9 @@ export default function Configuration() {
             title: "Setup your own SaaS",
             subtitle: "Establish a dynamic, scalable Software as a Service platform tailored to meet your unique business needs. Dive into the setup process with ease, configure essential tools, and prepare to deliver a seamless experience to your users right from day one.",
             button: <button
-                className="md:text-lg flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-600 rounded-full bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-3"
+                className="md:text-lg flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-2"
             >
-                <ArrowPathIcon className="h-4 w-4" aria-hidden="true" />
+                <ArrowPathIcon className="h-5 w-5" aria-hidden="true" />
                 <span>Configure your SaaS</span>
             </button>
         },
@@ -28,7 +28,7 @@ export default function Configuration() {
             subtitle: "Kickstart your journey by building a powerful, scalable Software as a Service (SaaS) platform. Streamline processes, deliver value to users, and take advantage of cloud-based solutions tailored to your vision.",
             status: "active",
             button: <button
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">
                 Get started
                 <svg className="w-3 h-3 ms-2 rtl:rotate-180"
                     aria-hidden="true"
@@ -112,7 +112,6 @@ export default function Configuration() {
         }
     ]
 
-
     return (
         <div className="bg-white w-full">
             <div className='bg-white h-full w-[90%] md:max-w-[50%] mx-auto md:py-24'>
@@ -130,7 +129,8 @@ export default function Configuration() {
                                 {item.subtitle}
                             </p>
                             {item.button}
-                        </li>)
+                        </li>
+                        )
                     }
                 </ol>
 

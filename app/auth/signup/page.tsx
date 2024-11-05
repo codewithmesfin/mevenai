@@ -148,7 +148,7 @@ export default function Signup() {
               <button
                 onClick={submit}
                 disabled={!validate.signupForm(formError) || submitting}
-                className={`${validate.signupForm(formError) && !submitting ? 'bg-indigo-600 focus-visible:outline-indigo-600 hover:bg-indigo-500' : 'bg-gray-400'} flex w-full justify-center items-center space-x-2 rounded-md  px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}
+                className={`${validate.signupForm(formError) && !submitting ? 'bg-blue-600 hover:bg-blue-500' : 'bg-gray-400'} flex w-full justify-center items-center space-x-2 rounded-md  px-3 py-2.5 text-sm/6 font-semibold text-white shadow-smfocus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}
               >
                 {submitting && <LoadingIndicator color="fill-blue-600" />}
                 {submitting ? <span>Creating your account ...</span> : <span>Start a 7 day free trial</span>}
@@ -157,8 +157,8 @@ export default function Signup() {
           </div>
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
-            Already have an account ?
-            <Link href="/auth/login" className="px-1 font-semibold text-indigo-600 hover:text-indigo-500">
+            Already have an account?
+            <Link href="/auth/login" className="px-2 font-semibold text-blue-600 hover:text-blue-500">
               Sign in
             </Link>
           </p>
