@@ -1,6 +1,18 @@
 import Request from "axios";
+import { getToken, isAuthenticated, isTokenExpired } from "./auth";
 
 const API_ROOT = "https://api.mevinai.com"
+
+
+
+const getAcceessToken = () => {
+    const authenticated = isAuthenticated()
+    if (authenticated) {
+        const token = getToken()
+        return token
+    }
+    else return undefined
+}
 
 const api = {
     async signup(user: any, path: any) {
@@ -21,10 +33,12 @@ const api = {
             }
         );
     },
-    create(data: any, path: any, token?: string) {
+    create(data: any, path: any) {
+        const token = getAcceessToken()
         const header = token ? {
             headers: {
-                "x-access-token": token,
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
             },
         } : undefined
         return Request.post(`${API_ROOT}${path}`, data, header);
@@ -63,5 +77,6 @@ const api = {
         } : undefined
         return Request.delete(`${API_ROOT}${path}/${id}`, header);
     },
+   
 };
 export default api;

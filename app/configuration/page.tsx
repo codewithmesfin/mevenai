@@ -2,6 +2,7 @@
 
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { getMeta } from '../lib/seo';
+import Link from 'next/link';
 
 export const metadata = getMeta({
     title: 'Welcome to Our Site',
@@ -15,12 +16,13 @@ export default function Configuration() {
             heading: "SaaS setup",
             title: "Setup your own SaaS",
             subtitle: "Establish a dynamic, scalable Software as a Service platform tailored to meet your unique business needs. Dive into the setup process with ease, configure essential tools, and prepare to deliver a seamless experience to your users right from day one.",
-            button: <button
-                className="md:text-lg flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-2"
+            button: <Link
+                href={"/setup"}
+                className="w-[250px] md:text-lg flex justify-evenly items-center space-x-1 md:space-x-3 border border-blue-600 rounded-xl bg-blue-600 hover:bg-green-500 hover:border-green-500 text-white px-3 md:px-6 py-2"
             >
                 <ArrowPathIcon className="h-5 w-5" aria-hidden="true" />
                 <span>Configure your SaaS</span>
-            </button>
+            </Link>
         },
         {
             heading: "Site Creation",
